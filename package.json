@@ -1,0 +1,24 @@
+{
+  "name": "catrina",
+  "version": "0.0.1",
+  "title": "Catrina",
+  "description": "Template Project Front-End",
+  "author": "Thulio Philioe <thulioph@gmail.com>",
+  "homepage": "https://github.com/thulioph/catrina",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thulioph/catrina.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.6.1"
+  }
+}

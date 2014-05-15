@@ -1,0 +1,14 @@
+{
+  "name": "catrina",
+  "version": "0.0.1",
+  "authors": [
+    "Thulio Philipe | thulioph.com"
+  ],
+  "main": "src/js/main.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "jquery.maskedinput": "~1.3.1"
+  }
+}

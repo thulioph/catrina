@@ -1,0 +1,74 @@
+/* line 5, ../../sass/partials/general.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../../sass/partials/general.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 15, ../../sass/partials/general.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  /* fallback */
+  background-color: #cc2515;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cc2515), to(#9e1d10));
+  background: -webkit-linear-gradient(bottom, #cc2515, #9e1d10);
+  background: -moz-linear-gradient(bottom, #cc2515, #9e1d10);
+  background: -ms-linear-gradient(bottom, #cc2515, #9e1d10);
+  background: -o-linear-gradient(bottom, #cc2515, #9e1d10);
+  background: linear-gradient(bottom, #cc2515, #9e1d10);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='colorLight',GradientType=1 );
+  /* IE6-9 */
+}
+
+/* line 21, ../../sass/partials/general.scss */
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  border-bottom: 1px dashed #cc2515;
+  color: #cc2515;
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+/* line 29, ../../sass/partials/general.scss */
+a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+/* line 35, ../../sass/partials/general.scss */
+select:focus, input:focus {
+  border: none;
+  outline: none;
+}
+
+/* line 41, ../../sass/partials/general.scss */
+input {
+  border: none;
+}
+/* line 43, ../../sass/partials/general.scss */
+input:focus {
+  box-shadow: 1px 1px 3px rgba(64, 173, 255, 0.8);
+}
+
+/* line 49, ../../sass/partials/general.scss */
+::-moz-selection, ::selection {
+  background: #cc2515;
+  text-shadow: none;
+  color: #40adff;
+}
+
+/* line 59, ../../sass/partials/general.scss */
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+  color: #9e1d10;
+}

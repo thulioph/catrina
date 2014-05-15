@@ -1,0 +1,26 @@
+@import 'base';
+
+// placeholder
+%box {
+	position: relative;
+	margin: $m-auto;
+	display: block;
+	width: (800px / $fixed) * 100%; //valor real dividido pelo valor total multiplicado por 100% para se tornar %;
+}
+
+header {
+	@extend %box;
+	height: 200px;
+	background-color: $color-secondary;
+	@include transition(all, .2s, linear, 0s);
+	&:hover {
+		background-color: $color-secondary-transparent;
+	}
+}
+
+main {
+	@extend %box;
+	height: 150px;
+	margin-top: 20px;
+	border: 1px solid $color-secondary;
+}

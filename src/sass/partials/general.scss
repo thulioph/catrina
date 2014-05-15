@@ -1,0 +1,73 @@
+@import 'base';
+
+*,
+*:before,
+*:after {
+	 -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: $ff-normal;
+	font-size: 10px;
+  @include gradient($color-primary, $color-primary-dark);
+}
+
+a {
+	text-decoration: none;
+  font-family: $ff-normal;
+  font-size: ($fs-normal) + .2;
+  border-bottom: 1px dashed $color-primary;
+  color: $color-primary;
+
+  @include transition(all, .2s, linear, 0s);
+  &:hover {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+select {
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+input {
+	border: none;
+  &:focus {
+    @extend select:focus;
+    box-shadow: 1px 1px 3px $color-secondary-transparent;
+  }
+}
+
+::-moz-selection {
+    background: $color-primary;
+    text-shadow: none;
+    color: $color-secondary;
+}
+
+::selection {
+  @extend ::-moz-selection;
+}
+
+::-webkit-input-placeholder {
+   color: $color-primary-dark;
+}
+
+:-moz-placeholder {
+  @extend ::-webkit-input-placeholder;
+}
+
+::-moz-placeholder {
+  @extend ::-webkit-input-placeholder;
+}
+
+:-ms-input-placeholder {
+  @extend ::-webkit-input-placeholder;
+}

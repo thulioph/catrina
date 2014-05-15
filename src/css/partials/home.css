@@ -1,0 +1,29 @@
+/* line 4, ../../sass/partials/home.scss */
+header, main {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 80.80808%;
+}
+
+/* line 11, ../../sass/partials/home.scss */
+header {
+  height: 200px;
+  background-color: #40adff;
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+/* line 16, ../../sass/partials/home.scss */
+header:hover {
+  background-color: rgba(64, 173, 255, 0.8);
+}
+
+/* line 21, ../../sass/partials/home.scss */
+main {
+  height: 150px;
+  margin-top: 20px;
+  border: 1px solid #40adff;
+}
