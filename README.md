@@ -10,7 +10,7 @@ Criei este repositório com base nos estudos que venho fazendo, coletando inform
 
 ## Como usa-lo?
 
-É necessário que você tenha instalado na sua máquina [Sass](http://sass-lang.com), [Compass](), [Bower]() e [Grunt]()
+É necessário que você tenha instalado na sua máquina [Sass](http://sass-lang.com), [Compass](http://compass-style.org/), [Bower](http://bower.io/) e [Grunt](http://gruntjs.com/)
 
 
 ## Referências
