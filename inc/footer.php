@@ -3,7 +3,9 @@
 
 	<!-- libs - start -->
 	<script src="<?php echo _JSPATH . 'jquery/dist/jquery.min.js'?>"></script>
+    <script src="<?php echo _JSPATH . 'i18next/i18next.min.js'?>"></script>
 	<script src="dist/js/scripts.combined.min.js"></script>
+    <!-- // <script src="src/js/main.js"></script> -->
 
 	<script>
 		Main.setUp();

@@ -28,6 +28,7 @@ Caso tenha alguma dúvida do conteúdo/plugin abordado aqui, indico os links aba
 
 
 - [Event Tracking](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide?hl=pt-BR)
+- [i18n](http://i18next.com/)
 
 
 

@@ -24,3 +24,28 @@ main {
 	margin-top: 20px;
 	border: 1px solid $color-secondary;
 }
+
+// nav
+.nav-list {
+	float: left;
+	clear: left;
+}
+.nav-item {
+	display: inline-block;
+	background-color: pink;
+}
+.nav-link {
+	padding: 2px;
+	display: block;
+}
+
+// language
+.language-list {
+	float: right;
+}
+.language-item {
+	@extend .nav-item;
+}
+.language-link {
+	@extend .nav-link;
+}

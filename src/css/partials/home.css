@@ -27,3 +27,26 @@ main {
   margin-top: 20px;
   border: 1px solid #40adff;
 }
+
+/* line 29, ../../sass/partials/home.scss */
+.nav-list {
+  float: left;
+  clear: left;
+}
+
+/* line 33, ../../sass/partials/home.scss */
+.nav-item, .language-item {
+  display: inline-block;
+  background-color: pink;
+}
+
+/* line 37, ../../sass/partials/home.scss */
+.nav-link, .language-link {
+  padding: 2px;
+  display: block;
+}
+
+/* line 43, ../../sass/partials/home.scss */
+.language-list {
+  float: right;
+}

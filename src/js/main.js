@@ -9,11 +9,21 @@ Main = {
 
 		that._currentScreen = $('body').data('screen');
 
+		// Events Tracking
 		that.Tracking.trackingEvents();
 
-		if (that._currentScreen == 'home') {
-			that.Other.createOther();
-		};
+		// Language
+		that.Language.startLanguage();
+
+		$('.language-en').on('click', function() {
+				that.Language.i18en();
+		});
+
+		$('.language-pt').on('click', function() {
+				that.Language.i18pt();
+		});
+
+		// if (that._currentScreen == 'home') {};
 
 	},
 
@@ -23,19 +33,40 @@ Main = {
 				ga('send', 'event', 'header', 'Menu', 'Home');
 			});
 
-			$('.nav-sobre').on('click', function(event) {
+			$('.nav-about').on('click', function(event) {
 				ga('send', 'event', 'header', 'Menu', 'Sobre');
 			});
 
-			$('.nav-contato').on('click', function(event) {
+			$('.nav-contact').on('click', function(event) {
 				ga('send', 'event', 'header', 'Menu', 'Contato');
 			});
 		}
 	},
 
-	Other: {
-		createOther: function() {
-			console.log('Teste');
+	Language: {
+		startLanguage: function() {
+			i18n.init({
+				fallbackLng: 'pt-BR' //fallback quando não definir linguagem
+				,debug: true //debug do plugin
+				,fixLng: true //preserva o cookie quando a linguagem for definida
+				,load: 'current' //define a forma correta de declarar linguagens
+			},
+			function(translation) {
+				$('[data-i18n]').i18n();
+				var appName = translation('app.name');
+			});
+		},
+
+		i18en: function() {
+			i18n.setLng('en-US', {fixLng: true}, function(translation){
+				$('[data-i18n]').i18n();
+			});
+		},
+
+		i18pt: function() {
+			i18n.setLng('pt-BR', {fixLng: true}, function(translation){
+				$('[data-i18n]').i18n();
+			});
 		}
 	}
 }
