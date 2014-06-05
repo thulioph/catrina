@@ -22,6 +22,15 @@ Antes de dar continuidade gostaria de referenciar os projetos que acompanhei, av
 - [Cérebro](https://github.com/cerebrobr/)
 
 
+## Links de Apoio
+
+Caso tenha alguma dúvida do conteúdo/plugin abordado aqui, indico os links abaixo para melhor entendimento:
+
+
+- [Event Tracking](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide?hl=pt-BR)
+
+
+
 ## License
 
 [MIT License](http://thulioph.mit-license.org/) © thulioph
