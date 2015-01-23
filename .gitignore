@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/*
 .sass-cache/*
-.git
-/nbproject/private/
-arquivos/*
+.git/*
+bower_components/*
+.gitignore

@@ -1,0 +1,86 @@
+{
+  "watch": {
+    "options": {
+      "livereload": true
+    },
+
+    "css": {
+      "files": "src/sass/{,*/}*.{scss,sass}",
+      "tasks": ["sass:dist"]
+    },
+
+    "js": {
+      "files": "src/js/**/*",
+      "tasks": ["uglify"]
+    },
+
+    "html": {
+      "files": ["*.{html,htm,shtml,shtm,xhtml,php,jsp,asp,aspx,erb,ctp}"]
+    }
+  },
+
+  "sass": {
+    "dist": {
+      "options": {
+        "sourcemap": "none",
+        "lineNumbers": true,
+        "style": "expanded"
+      },
+
+      "files": {
+        "dist/css/style.min.css": "src/sass/main.scss"
+      }
+    }
+  },
+
+  "browserSync": {
+    "bsFiles": {
+      "src": ["src/css/*.css", "*.{html,htm,shtml,shtm,xhtml,php,jsp,asp,aspx,erb,ctp}"]
+    },
+
+    "options": {
+      "watchTask": true
+    }
+  },
+
+  "uglify": {
+    "options": {
+      "mangle": false
+    },
+
+    "dist": {
+      "files": {
+        "dist/js/scripts.min.js": [
+          "src/js/APP.js"
+          ,"src/js/APP.Language.js"
+          ,"src/js/APP.Height.js"
+          ,"src/js/APP.Parallax.js"
+          ,"src/js/APP.Countdown.js"
+          ,"src/js/APP.Scroll.js"
+          ,"src/js/APP.Register.js"
+          ,"src/js/APP.Agenda.js"
+          ,"src/js/APP.Maps.js"
+          ,"src/js/APP.External.js"
+        ],
+
+        "dist/js/libs.min.js": [
+          "bower_components/jquery/dist/jquery.min.js"
+          ,"bower_components/bootstrap/dist/js/bootstrap.js"
+          ,"bower_components/i18next/i18next.min.js"
+          ,"bower_components/jquery.countdown/dist/jquery.countdown.min.js"
+        ]
+      }
+    }
+  },
+
+  "imagemin": {
+    "dynamic": {
+      "files": [{
+        "expand": true,
+        "cwd": "src/images",
+        "src": ["**/*.{png,jpg,gif}"],
+        "dest": "dist/images"
+      }]
+    }
+  }
+}
