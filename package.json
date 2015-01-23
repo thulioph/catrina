@@ -1,6 +1,6 @@
 {
   "name": "catrina",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "title": "Catrina",
   "description": "Template Project Front-End",
   "author": "Thulio Philioe <thulioph@gmail.com>",
@@ -12,13 +12,17 @@
   },
   "private": true,
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "matchdep": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-compass": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.6.1"
+    "grunt": "^0.4.5",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-browser-sync": "^0.9.1",
+    "time-grunt": "~1.0.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "load-grunt-tasks": "~1.0.0"
   }
 }

@@ -1,40 +1,32 @@
-/* TEAM */
+###########################################################
+#                    Awesome Team
+############################################################
 
-  Web Designer: First Name and Last Name
-  Twitter: @myName
-  Contact: fb.com/myName
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Designer: First and Last name
+  Contact: http://fb.com/myurl
+  Twitter: @twitter
+  From: Brazil, Pernambuco, Paulista
+
+  Front-End Engineer: First and Last name
+  Contact: http://myurl.com
+  Twitter: @twitter
   From: Brazil, Pernambuco, Recife
 
-  Front-End Engineer: Thulio Philipe
-  Contact: thulioph.com
-  Twitter: @thulioph_
-  From: Brazil, Pernambuco, Recife
-
-  Back-End Engineer: First Name and Last Name
-  Twitter: @myName
-  Contact: fb.com/myName
+  Back-End Engineer: First and Last name
+  Contact: http://myurl.com
+  Twitter: @twitter
   From: Brazil, Pernambuco, Recife
 
 
-/* THANKS */
+# PROJECT
 
-  (First)
-  Friends who have contributed directly and indirectly to make this project possible.
-  [Dennis Calazans, Rodolfo Dias, Sérgio Hampel]
-
-  Your Company
-  Contact: http://www.company.com/
-  From: Brazil, Pernambuco, Recife
-
-  (Second)
-  My account in Spotify and Grooveshark that have many playlists wonderful.
-  NO MARKETING!!
-
-
-/* PROJECT */
-
-  Last update: 2014/05/14
+  Last update: 2015/01/03
   Doctype: HTML5
-  IDE: Sublime Text 2, FileZilla, Photoshop, Chrome Developer Tools
-  Standards: HTML5, CSS3, SASS, COMPASS, SSP http://bit.ly/1iku98o
-  Components: jQuery
+  IDE: Sublime Text, Chrome Developer Tools
+  Standards: HTML5, CSS3, APP.js
+  Components: jQuery, Bootstrap

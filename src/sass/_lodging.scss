@@ -1,0 +1,76 @@
+// —————————————————————————
+//     Lodging page
+// —————————————————————————
+
+
+.lodging {
+  @include linear-gradient(top, $color-primary, #3F535C);
+
+  .section-title {
+    color: $color-other;
+  }
+}
+
+.lodging-info {
+  margin-top: 20px;
+}
+
+.lodging-title {
+  color: $color-other;
+  font-size: $fs-medium;
+  font-family: $ff-secondary;
+  text-transform: uppercase;
+}
+
+.lodging-item {
+  font-size: $fs-small;
+  color: $color-other;
+  font-family: $ff-secondary;
+  margin-bottom: 20px;
+  list-style-type: circle;
+
+  span {
+    font-weight: $fw-semi-bold;
+  }
+
+  &:last-child {
+    list-style-type: none;
+  }
+}
+
+.lodging-link {
+  text-decoration: none;
+  color: $color-other;
+  @include transition(color, .2s, linear, 0s);
+
+  &:hover, &:focus {
+    color: $color-secondary;
+    text-decoration: none;
+  }
+
+  &.reserve {
+    border-radius: 3px;
+    border: 1px solid $color-other;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    font-size: $fs-extra-small;
+    @include transition(all, .2s, linear, 0s);
+
+    &:hover {
+      background-color: $color-other;
+      color: $color-primary;
+    }
+  }
+}
+
+
+// iPads
+@media (min-width: 768px) {}
+
+
+// Desktops
+@media (min-width: 992px) {}
+
+
+// Large
+@media (min-width: 1200px) {}

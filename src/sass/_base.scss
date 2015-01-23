@@ -1,0 +1,233 @@
+// ——————————————————————————————————————————————————————————————————————————
+//               Base: Variables, Mixins & Utilities
+// ——————————————————————————————————————————————————————————————————————————
+
+// ——————————————
+//     Colors
+// ——————————————
+
+// Hexadecimals
+$blue:                      #004d6e;
+$blue-secondary:            #009ee1;
+$white:                     #ffffff;
+$gray:                      #e6e6e6;
+
+// RGB
+$blue-rgb:                  rgb(0, 77, 110);
+$blue-secondary-rgb:        rgb(0, 158, 225);
+$white-rgb:                 rgb(255, 255, 255);
+$gray-rgb:                  rgb(230, 230, 230);
+
+// Names
+$color-primary:         $blue;
+$color-primary-dark:    $blue-secondary;
+$color-secondary:       $white;
+$color-other:           $gray;
+
+// ——————————————————————
+//     Mixins
+// ——————————————————————
+
+
+//
+// Gradient
+//
+
+// Background Images
+@mixin path ($rulers...) {
+  background-image: url("../../src/images/"+$rulers);
+}
+
+@mixin linear-gradient ($angle, $startColor, $endColor) {
+  background-color: $startColor;
+  background-image: -webkit-linear-gradient($angle, $startColor, $endColor);
+  background-image:    -moz-linear-gradient($angle, $startColor, $endColor);
+  background-image:     -ms-linear-gradient($angle, $startColor, $endColor);
+  background-image:      -o-linear-gradient($angle, $startColor, $endColor);
+  background-image:         linear-gradient($angle, $startColor, $endColor);
+}
+
+@mixin linear-gradient-control($angle, $colour, $position, $colour2, $position2) {
+ background-color:  $colour;
+ background-image:  -webkit-linear-gradient($angle, $colour $position, $colour2 $position2);
+  background-image:    -moz-linear-gradient($angle, $colour $position, $colour2 $position2);
+  background-image:     -ms-linear-gradient($angle, $colour $position, $colour2 $position2);
+  background-image:      -o-linear-gradient($angle, $colour $position, $colour2 $position2);
+  background-image:          linear-gradient($angle, $colour $position, $colour2 $position2);
+ // background-image: linear-gradient(-87deg, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.08) 49%);
+}
+
+// Text Truncate
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Transition
+@mixin transition($property, $time, $method, $delay){
+  -webkit-transition: $property $time $method $delay;
+     -moz-transition: $property $time $method $delay;
+      -ms-transition: $property $time $method $delay;
+       -o-transition: $property $time $method $delay;
+          transition: $property $time $method $delay;
+}
+
+// Border-Radius
+@mixin bdr($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//
+// Shadow
+//
+
+// box-shadow
+@mixin bsd($rulers...) {
+  -webkit-box-shadow: $rulers;
+     -moz-box-shadow: $rulers;
+      -ms-box-shadow: $rulers;
+       -o-box-shadow: $rulers;
+          box-shadow: $rulers;
+}
+
+// text-shadow
+@mixin tsd($x, $y, $blur, $color) {
+  -webkit-text-shadow: $x $y $blur $color;
+     -moz-text-shadow: $x $y $blur $color;
+      -ms-text-shadow: $x $y $blur $color;
+       -o-text-shadow: $x $y $blur $color;
+          text-shadow: $x $y $blur $color;
+}
+
+//
+// Translate
+//
+
+// translateY
+@mixin translateY($value) {
+  -webkit-transform: translateY($value);
+     -moz-transform: translateY($value);
+      -ms-transform: translateY($value);
+       -o-transform: translateY($value);
+          transform: translateY($value);
+}
+
+// translateX
+@mixin translateX($value) {
+  -webkit-transform: translateX($value);
+     -moz-transform: translateX($value);
+      -ms-transform: translateX($value);
+       -o-transform: translateX($value);
+          transform: translateX($value);
+}
+
+// translate3d
+@mixin translate3d($valueX, $valueY, $valueZ) {
+  -webkit-transform: translate3d($valueX, $valueY, $valueZ);
+     -moz-transform: translate3d($valueX, $valueY, $valueZ);
+      -ms-transform: translate3d($valueX, $valueY, $valueZ);
+       -o-transform: translate3d($valueX, $valueY, $valueZ);
+          transform: translate3d($valueX, $valueY, $valueZ);
+}
+
+// skew
+@mixin skew($value) {
+  -webkit-transform: skew($value);
+     -moz-transform: skew($value);
+      -ms-transform: skew($value);
+       -o-transform: skew($value);
+          transform: skew($value);
+}
+
+// rotate
+@mixin rotate($value) {
+  -webkit-transform: rotate($value);
+     -moz-transform: rotate($value);
+      -ms-transform: rotate($value);
+       -o-transform: rotate($value);
+          transform: rotate($value);
+}
+
+// transform-origin
+@mixin origin($value) {
+  -webkit-transform-origin: $value;
+     -moz-transform-origin: $value;
+      -ms-transform-origin: $value;
+       -o-transform-origin: $value;
+          transform-origin: $value;
+}
+
+// scale
+@mixin scale($rulers...) {
+  -webkit-transform: scale($rulers);
+     -moz-transform: scale($rulers);
+      -ms-transform: scale($rulers);
+       -o-transform: scale($rulers);
+          transform: scale($rulers);
+}
+
+// animation
+@mixin animation($rulers...){
+  -webkit-animation: $rulers;
+     -moz-animation: $rulers;
+      -ms-animation: $rulers;
+       -o-animation: $rulers;
+          animation: $rulers;
+}
+
+// appearance
+@mixin apr($value) {
+  -webkit-appearance: $value;
+     -moz-appearance: $value;
+      -ms-appearance: $value;
+       -o-appearance: $value;
+          appearance: $value;
+}
+
+
+//
+// Organizes
+//
+
+@mixin organizers ($type) {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  @if $type == 'web' {
+    @include path('icon-web.svg');
+  } @else if $type == 'company' {
+    @include path('icon-company.svg');
+  } @else if $type == 'social' {
+    @include path('icon-social.svg');
+  }
+}
+
+// @mixin data ($attr) {
+//   content: attr($attr);
+//   @extend %data;
+
+//   @if $attr == 'data-start' {
+//     top: -34px;
+//     color: $dark;
+//     height: 20px;
+//     line-height: 30px;
+//     left: 35px;
+//   } @else if $attr == 'data-end' {
+//     height: 23px;
+//     right: 0;
+//     top: -73px;
+//     line-height: 18px;
+//     color: $yellow;
+//   }
+// }

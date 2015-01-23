@@ -1,15 +1,20 @@
-// reset
-@import 'compass/reset';
+// Reset
+@import '_reset';
 
-// sprite generator
-@import 'sprite-generator';
+// Libs
+@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
 
-// partials
-@import 'partials/fonts';
-@import 'partials/general';
+// Custom
+@import '_typography';
+@import '_base';
+@import '_form';
 
-// ui kit
-@import 'partials/ui';
+// Animations
+@import '_animations';
 
-// pages
-@import 'partials/home';
+// General styles
+@import '_general';
+
+// Pages
+@import '_organizers';
+@import '_lodging';

@@ -1,0 +1,81 @@
+// —————————————————————————
+//     Organizers page
+// —————————————————————————
+
+.organizers-item {
+  border-bottom: 1px solid $color-other;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  &:first-child {
+    padding-top: 40px;
+  }
+}
+
+.organizers-image {
+  img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: $color-primary;
+  }
+}
+
+.organizers-description {
+  vertical-align: top;
+
+  p {
+    text-align: justify;
+    font-size: $fs-small;
+    line-height: $fs-medium;
+    color: $color-primary;
+    font-family: $ff-secondary;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-primary-dark;
+    font-family: $ff-secondary;
+    font-size: $fs-medium;
+    display: inline-block;
+    margin: 20px 30px 0 0;
+    @include transition(color, .2s, linear, 0s);
+
+    &.web {
+      &::before {
+        @include organizers(web);
+      }
+    }
+
+    &.company {
+      &::before {
+        @include organizers(company);
+      }
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.organizers-name {
+  text-transform: uppercase;
+  font-family: $ff-primary;
+  font-size: $fs-extra-medium;
+}
+
+
+//
+// Media queries
+//
+
+// iPad
+@media (min-width: 768px) {
+  .organizers-item { text-align: left; }
+
+  .organizers-description {
+    p { text-align: left; }
+  }
+}

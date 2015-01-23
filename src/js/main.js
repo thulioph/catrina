@@ -16,11 +16,11 @@ Main = {
 		that.Language.startLanguage();
 
 		$('.language-en').on('click', function() {
-				that.Language.i18en();
+			that.Language.i18en();
 		});
 
 		$('.language-pt').on('click', function() {
-				that.Language.i18pt();
+			that.Language.i18pt();
 		});
 
 		// if (that._currentScreen == 'home') {};

@@ -1,0 +1,1079 @@
+// —————————————————————————
+//     General
+// —————————————————————————
+
+body { font-size: $fs-root; }
+
+svg {
+  font-family: $ff-svg !important;
+}
+
+::-moz-selection {
+  background: $color-primary;
+  text-shadow: none;
+  color: $color-other;
+}
+
+::selection {
+  background: $color-primary;
+  text-shadow: none;
+  color: $color-other;
+}
+
+
+//
+// Header
+//
+
+.header-primary {
+  min-height: 460px;
+  max-width: 120%;
+  position: relative;
+  // overflow: hidden;
+
+  @include path('bg-header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 62%;
+}
+
+.switch-language {
+  border: 1px solid $color-primary;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 25px;
+  position: relative;
+  z-index: 3;
+  @extend %animate-switch;
+
+  button {
+    display: inline-block;
+    cursor: pointer;
+    font-size: $fs-small;
+    text-transform: uppercase;
+    color: $color-primary;
+    background: transparent;
+    border: none;
+    padding: 5px 15px;
+    @include apr(none);
+    @include transition(all, .2s, 0s, linear);
+
+    &:first-child {
+      border-right: 1px solid $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-secondary;
+    }
+
+    &.js-active {
+      @extend button:hover;
+    }
+  }
+}
+
+.logo-primary {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  z-index: 4;
+  @extend %animate-logo;
+
+  a {
+    text-indent: -9999px;
+    display: block;
+    height: 73px;
+    background-size: 100% 73px;
+  }
+}
+
+.js-logo-en {
+  a {
+    @include path('logo-primary-2-en.png');
+    background-repeat: no-repeat;
+    background-size: auto 73px;
+    background-position: center center;
+  }
+}
+
+.js-logo-pt {
+  a {
+    @include path('logo-primary-2-pt.png');
+    background-repeat: no-repeat;
+    background-size: auto 73px;
+    background-position: center center;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  z-index: 4;
+  @extend %animate-logo;
+
+  time {
+    font-family: $ff-primary;
+    color: $color-secondary;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    line-height: $fs-extra-medium;
+  }
+
+  p {
+    color: $color-secondary;
+    font-family: $ff-secondary;
+    font-size: $fs-medium;
+  }
+}
+
+
+//
+// Countdown
+//
+
+.countdown {
+  z-index: 20;
+  text-align: center;
+  visibility: hidden;
+  @extend %animate-logo;
+
+  p {
+    color: $color-secondary;
+    font-size: $fs-large;
+    display: inline-block;
+    font-family: $ff-secondary;
+    position: relative;
+    width: 70px;
+
+    &::after {
+      content: attr(data-time);
+      position: absolute;
+      bottom: -15px;
+      display: inline-block;
+      font-family: $ff-secondary;
+      font-size: $fs-small;
+      text-transform: uppercase;
+    }
+
+    &:nth-child(1) {
+      &::after {
+        left: 31%;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        left: 37%;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        left: 33%;
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        left: 34%;
+      }
+    }
+  }
+}
+
+
+//
+// Down
+//
+
+.down {
+  width: 42px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -17.5px;
+  cursor: pointer;
+  margin-top: 100px;
+  z-index: 4;
+
+  @include path('down.png');
+  background-repeat: no-repeat;
+  background-size: 42px 18px;
+  @extend %animate-down;
+
+  &:hover {
+    @extend %paused-animate-down;
+  }
+}
+
+
+//
+// Nav primary
+//
+
+.nav-primary {
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  // top: 400px;
+  z-index: 4;
+  background-color: $color-primary;
+  @include bsd(0px 1px 4px #000);
+  @extend %animate-nav;
+
+  &.js-fixed {
+    position: fixed;
+    top: 0 !important;
+    z-index: 999 !important;
+  }
+}
+
+.nav-item {
+  overflow: hidden;
+  padding: 2px 4px;
+  height: 60px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  color: $color-secondary;
+  text-transform: uppercase;
+  line-height: 60px;
+  font-size: $fs-small;
+  font-family: $ff-secondary;
+  position: relative;
+  overflow: hidden;
+  margin-top: -2px;
+  @include transition(all, .2s, .1s, linear);
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: #1D2B30;
+    @include transition(all, .2s, 0s, ease-in);
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $color-secondary;
+    @include scale(1.2);
+
+    &::before {
+      content: '';
+      height: 54px;
+      top: 5px;
+      opacity: 1;
+    }
+  }
+
+  &.js-nav-active {
+    text-decoration: none;
+    color: $color-secondary;
+    @include scale(1.2);
+
+    &::before {
+      content: '';
+      height: 54px;
+      top: 5px;
+      opacity: 1;
+    }
+  }
+}
+
+.nav-logo {
+  overflow: hidden;
+  height: 60px;
+  padding: 0;
+  width: 0;
+
+  background-size: 100% 55px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  @include transition(all, .2s, linear, 0s);
+  @include scale(1);
+
+  &.invisible { @include scale(0); }
+
+  a {
+    text-indent: -9999px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar-brand {
+  height: 60px;
+  background-size: 100% 55px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0;
+  @include transition(opacity, .2s, ease, 0s);
+  @include path('logo-primary-2-pt.png');
+
+  &.js-opacity {
+    opacity: 1;
+  }
+}
+
+.navbar-header {
+  position: relative;
+
+  button {
+    background-color: $color-primary;
+  }
+}
+
+.icon-bar {
+  font-family: $ff-icon;
+  background-color: $color-secondary;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  background-color: $color-primary;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+}
+
+//
+// Main
+//
+
+.main {
+  position: relative;
+
+  section {
+    min-height: 450px;
+    padding-top: 20px;
+  }
+}
+
+.section-title {
+  font-family: $ff-title;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $fs-large;
+}
+
+.section-text {
+  font-size: $fs-small;
+  line-height: $fs-medium;
+  color: $color-primary;
+  text-align: left;
+  font-family: $ff-secondary;
+}
+
+
+//
+// About
+//
+
+.about {
+  padding-bottom: 60px;
+}
+
+
+//
+// Agenda
+//
+
+.agenda {
+  background-color: $color-other;
+  min-height: 550px;
+  padding-bottom: 20px;
+
+  aside {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .section-title {
+    color: $color-primary;
+  }
+}
+
+.tabs-list {
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+.tabs-item {
+  display: inline-block;
+  width: 185px;
+  padding: 0;
+  margin-right: 2px;
+  height: 45px;
+
+  a {
+    background-color: $color-secondary;
+    color: $color-primary;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: $fs-small;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-family: $ff-secondary;
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include bdr(10px 10px 0 0);
+    @include transition(all, .2s, 0s, ease-out);
+
+    &.js-active {
+      background-color: $color-primary;
+      color: $color-secondary;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-secondary;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.tab-content {
+  margin-top: 0 !important;
+  width: 100%;
+  padding-top: 0 !important;
+  text-align: center;
+}
+
+.agenda-item {
+  min-height: 100px;
+  margin-bottom: 20px;
+  border: 2px solid $color-primary;
+  border-radius: 10%;
+  background-color: transparent;
+  @include transition(background, .2s, 0s, linear);
+
+  .hour {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    height: 100%;
+    border-bottom: 3px solid $color-primary;
+    line-height: 57px;
+    font-size: $fs-small;
+    font-family: $ff-secondary;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 10px;
+      @include bdr(100%);
+      @include path('icon-clock.svg');
+      background-size: 20px 20px;
+      background-position: center center;
+    }
+   }
+
+  .aditional {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-left: -3px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color-primary;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 100px;
+      top: -30px;
+      @include bdr(100%);
+      @include transition(border, .2s, 0s, ease-out);
+    }
+
+    &.rapid-fire {
+      &::before {
+        @include path('icon-rapid-fire.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 60px 60px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        content: '';
+        border: 2px dotted $color-secondary;
+      }
+    }
+  }
+}
+
+.agenda-title {
+  font-family: $ff-title;
+  font-size: $fs-extra-medium;
+}
+
+.agenda-description {
+  font-family: $ff-secondary;
+  font-size: $fs-extra-small;
+}
+
+
+//
+// Getting here
+//
+
+.getting-here {
+  .section-title { color: $color-primary; }
+}
+
+.location-box {
+  border-bottom: 2px solid $color-other;
+  padding-bottom: 60px;
+}
+
+.location-info {
+  margin-bottom: 20px;
+
+  h3 {
+    color: $color-primary;
+    text-align: left;
+    font-family: $ff-title;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: $fs-medium;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+
+    &.plane {
+      @include path('icon-plane.svg');
+    }
+
+    &.car {
+      @include path('icon-car.svg');
+    }
+
+    &.taxi {
+      @include path('icon-taxi.svg');
+    }
+
+    &.apps {
+      @include path('icon-app.svg');
+    }
+  }
+
+  p {
+    color: $color-primary;
+    display: inline;
+    font-size: $fs-small;
+    line-height: $fs-extra-medium;
+    font-family: $ff-secondary;
+  }
+
+  a {
+    display: inline;
+    text-decoration: none;
+    color: $color-primary-dark;
+    font-size: $fs-small;
+  }
+}
+
+
+.location-map {
+  width: 100%;
+  height: 400px;
+}
+
+.maps-title {
+  color: $color-primary;
+  font-family: $ff-secondary;
+  font-size: $fs-extra-medium;
+}
+
+.maps-description {
+  font-size: $fs-small;
+  color: $color-primary-dark;
+  font-family: $ff-secondary;
+}
+
+.maps-link {
+  @extend .maps-description;
+  text-decoration: underline;
+}
+
+.box-images-hotel {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  @include bsd(0 -1px 6px #000);
+}
+
+.image-hotel {
+  float: left;
+  padding: 0;
+  position: relative;
+
+  img {
+    max-width: 100%;
+
+    &.image-hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      &.image-hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+//
+// Register
+//
+
+.register {
+  @include path('bg-register.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+
+  .section-title {
+    color: $color-secondary;
+  }
+
+  .section-text {
+    color: $color-secondary;
+    padding: 20px 0;
+    display: inline;
+  }
+
+  .attention {
+    font-size: 2rem;
+    color: $color-secondary;
+    margin: 0 0 30px 10px;
+  }
+}
+
+.help-block {
+  color: $color-secondary;
+  font-size: $fs-extra-small;
+}
+
+.options-submit { left: 20px; }
+
+.summary-project {
+  resize: vertical;
+}
+
+//
+// Form
+//
+
+.btn-send {
+  text-align: center;
+
+  .btn-primary { padding: 5px 50px 5px 20px; }
+
+  span {
+    display: inline-block;
+    font-family: $ff-icon;
+    margin-left: -40px;
+    -webkit-font-smoothing: antialiased;
+    color: $color-primary;
+    vertical-align: middle;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    span { color: $color-primary; }
+  }
+}
+
+
+//
+// Alerts
+//
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  float: left;
+  font-size: $fs-medium;
+  font-family: $ff-secondary;
+  color: $color-secondary;
+
+  &.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+
+  &.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+
+  &.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+}
+
+
+//
+// Footer
+//
+
+.footer-primary {
+  height: auto;
+  background-color: $color-other;
+  padding: 20px;
+}
+
+
+//
+// Organized
+//
+
+.organized {
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $ff-secondary;
+    font-size: $fs-small;
+    color: #A5A5A5;
+  }
+
+  border-bottom: 1px solid #A5A5A5;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.organized-box { overflow: hidden; }
+
+.organized-link {
+  width: 180px;
+  height: 80px;
+  margin: 0 auto 10px auto;
+  display: block;
+  @include transition(all, .2s, linear, 0s);
+
+  &:hover { opacity: .5; }
+}
+
+
+//
+// Nav secondary
+//
+
+.nav-secondary {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-secondary-item { display: inline-block; }
+
+.nav-secondary-link {
+  font-size: $fs-extra-small;
+  color: $color-primary;
+  font-family: $ff-secondary;
+  font-weight: $fw-semi-bold;
+  margin-right: 20px;
+  text-transform: uppercase;
+  @include transition(color, .2s, linear, 0s);
+
+  &:hover {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+}
+
+
+//
+// Social
+//
+
+.social { text-align: center; }
+
+.social-links {
+  width: 180px;
+  height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 20px 30px 0;
+  text-transform: uppercase;
+  line-height: 50px;
+  background-color: $color-primary;
+  font-family: $ff-primary;
+  font-size: $fs-extra-small;
+  color: $color-other;
+  text-align: right;
+  padding-right: 25px;
+  @include transition(all, .2s, linear, 0s);
+  &.facebook {
+    @include path('icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 17px 12px;
+  }
+
+  &.twitter {
+    @include path('icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 8px 13px;
+  }
+
+  &.lanyrd {
+    @include path('icon-lanyrd.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 18px 12px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    background-color: $color-other;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &.twitter { background-position: 9px -10px; }
+    &.facebook { background-position: 15px -12px; }
+    &.lanyrd { background-position: 15px -12px; }
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.copyright {
+  font-size: $fs-small;
+  font-family: $ff-secondary;
+  text-align: center;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: underline;
+    color: $color-primary;
+    @include transition(color, .2s, linear, 0s);
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+
+//
+// Become a Sponsor
+//
+
+#external { @include transition(all, 2s, linear, 0s); }
+
+.become-a-sponsor {
+  text-align: center;
+  min-height: 240px !important;
+  background-color: $color-secondary;
+  @include bsd(0 1px 1px #DBD9D9);
+
+  p {
+    font-family: $ff-secondary;
+    font-size: $fs-medium;
+    color: $color-primary;
+
+    &:first-child { margin-top: 30px; display: inline;}
+    &:last-child { font-weight: $fw-semi-bold; margin-top: 15px; }
+  }
+
+  a {
+    color: $color-primary;
+    font-size: $fs-medium;
+    text-decoration: underline;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+//
+// Media queries
+//
+
+// iPads
+@media (min-width: 768px) {
+  .header-primary {
+    height: 645px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .nav-primary { top: 586px; }
+
+  .countdown {
+    margin-top: 20px;
+    visibility: visible;
+  }
+
+  .down { top: 60%; }
+
+  .logo-primary {
+    a {
+      background-size: auto 114px;
+      background-position: center center;
+      height: 114px;
+    }
+  }
+
+  .subtitle {
+    time {
+      font-size: $fs-extra-medium;
+    }
+
+    p {
+      font-size: $fs-large;
+      margin-top: -5px;
+    }
+  }
+
+  .btn-send {
+    text-align: right;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .organizers-links { margin: 20px; }
+
+  .box-images-hotel { height: 130px; }
+
+  .agenda-item {
+    border-radius: 0;
+    margin-bottom: 0;
+    border-top: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
+    border-left: 2px solid $color-primary;
+    border-bottom: none;
+
+    &:hover { background-color: $color-secondary; }
+
+    &.top { @include bdr(10px 10px 0 0); }
+
+    &.bottom {
+      @include bdr(0 0 10px 10px);
+      border-bottom: 2px solid $color-primary;
+    }
+
+    .hour {
+      line-height: 95px;
+      display: inline-block;
+      width: 18%;
+      border-bottom: 0;
+      text-align: left;
+      padding-left: 10px;
+      border-right: 3px solid $color-primary;
+    }
+
+    .aditional {
+      text-align: left;
+      width: 80%;
+      display: inline-block;
+      padding: 20px 15px 20px 45px;
+
+      &::before {
+        content: '';
+        left: -30px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+// Desktops
+@media (min-width: 992px) {
+  .header-primary {
+    background-position: center 63%;
+    overflow: hidden;
+  }
+
+  .box-images-hotel { height: 213px; }
+
+  .section-text {
+    font-size: $fs-medium;
+    line-height: $fs-extra-medium;
+    padding-top: 10px;
+  }
+
+  .logo-primary {
+    a {
+      background-size: auto 134px;
+      background-position: center center;
+      height: 134px;
+    }
+  }
+
+  .agenda-item {
+    .hour {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+// Large
+@media (min-width: 1200px) {}
