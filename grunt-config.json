@@ -52,22 +52,21 @@
       "files": {
         "dist/js/scripts.min.js": [
           "src/js/APP.js"
+          ,"src/js/APP.Status.js"
           ,"src/js/APP.Language.js"
-          ,"src/js/APP.Height.js"
-          ,"src/js/APP.Parallax.js"
-          ,"src/js/APP.Countdown.js"
+          ,"src/js/APP.Tracking.js"
           ,"src/js/APP.Scroll.js"
-          ,"src/js/APP.Register.js"
-          ,"src/js/APP.Agenda.js"
-          ,"src/js/APP.Maps.js"
           ,"src/js/APP.External.js"
+          ,"src/js/APP.Storage.js"
         ],
 
         "dist/js/libs.min.js": [
           "bower_components/jquery/dist/jquery.min.js"
-          ,"bower_components/bootstrap/dist/js/bootstrap.js"
           ,"bower_components/i18next/i18next.min.js"
-          ,"bower_components/jquery.countdown/dist/jquery.countdown.min.js"
+          ,"bower_components/fastclick/lib/fastclick.js"
+          ,"bower_components/slick-carousel/slick/slick.min.js"
+          ,"bower_components/hammerjs/hammer.min.js"
+          ,"bower_components/handlebars/handlebars.js"
         ]
       }
     }
