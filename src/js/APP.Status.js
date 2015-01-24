@@ -1,5 +1,5 @@
 // ==========================================
-// Verifica se o usuário possui conexão
+// Verify if user have internet.
 // ==========================================
 
 var APP  = APP || {};
@@ -9,15 +9,15 @@ APP.Status = {
 
     handlerStatus = APP.delegate(this, this.getStatus);
     $(window).on('online offline', handlerStatus);
-
-    this.getStatus();
   },
 
   getStatus: function() {
+    var that = this;
+
     if (navigator.onLine == true) {
-      APP.Status.statusOn();
+      that.statusOn();
     } else {
-      APP.Status.statusOff();
+      that.statusOff();
     }
   },
 
