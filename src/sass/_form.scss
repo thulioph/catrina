@@ -26,42 +26,12 @@ select {
 }
 
 input {
-  font-family: $ff-secondary;
+  font-family: $ff-primary;
 
   &:focus {
     outline: none;
-    @include bsd(1px 2px 3px $color-secondary);
+    @include bsd(1px, 2px, 3px, $color-secondary);
   }
-}
-
-.form-group {
-  label {
-    cursor: pointer;
-    color: $color-secondary;
-    text-transform: uppercase;
-    font-size: $fs-small;
-    font-family: $ff-secondary;
-  }
-
-  &.captcha {
-    width: 120px;
-    height: 40px;
-    display: inline-block;
-  }
-
-  &.inline-block {
-    display: inline-block;
-    margin-left: 20px;
-    width: 51%;
-  }
-}
-.input-group-addon {
-    background-color: #283A42;
-    color: #9DDE38;
-  }
-.input-primary {
-  border-radius: 3px;
-  border: 1px solid $color-secondary;
 }
 
 .btn-primary {

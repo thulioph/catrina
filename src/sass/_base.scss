@@ -54,7 +54,6 @@ $color-other:           $gray;
   background-image:     -ms-linear-gradient($angle, $colour $position, $colour2 $position2);
   background-image:      -o-linear-gradient($angle, $colour $position, $colour2 $position2);
   background-image:          linear-gradient($angle, $colour $position, $colour2 $position2);
- // background-image: linear-gradient(-87deg, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.08) 49%);
 }
 
 // Text Truncate
@@ -87,7 +86,15 @@ $color-other:           $gray;
 //
 
 // box-shadow
-@mixin bsd($rulers...) {
+@mixin bsd($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $color;
+     -moz-box-shadow: $x $y $color;
+      -ms-box-shadow: $x $y $color;
+       -o-box-shadow: $x $y $color;
+          box-shadow: $x $y $color;
+}
+
+@mixin bsd-multiples($rulers...) {
   -webkit-box-shadow: $rulers;
      -moz-box-shadow: $rulers;
       -ms-box-shadow: $rulers;
@@ -163,12 +170,12 @@ $color-other:           $gray;
 }
 
 // scale
-@mixin scale($rulers...) {
-  -webkit-transform: scale($rulers);
-     -moz-transform: scale($rulers);
-      -ms-transform: scale($rulers);
-       -o-transform: scale($rulers);
-          transform: scale($rulers);
+@mixin scale3d($scaleX, $scaleY, $scaleZ) {
+  -webkit-transform: scale($scaleX, $scaleY, $scaleZ);
+     -moz-transform: scale($scaleX, $scaleY, $scaleZ);
+      -ms-transform: scale($scaleX, $scaleY, $scaleZ);
+       -o-transform: scale($scaleX, $scaleY, $scaleZ);
+          transform: scale($scaleX, $scaleY, $scaleZ);
 }
 
 // animation
@@ -195,7 +202,6 @@ $color-other:           $gray;
 //
 
 @mixin organizers ($type) {
-  content: '';
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -204,30 +210,13 @@ $color-other:           $gray;
   background-repeat: no-repeat;
   background-size: 20px 20px;
 
-  @if $type == 'web' {
-    @include path('icon-web.svg');
-  } @else if $type == 'company' {
-    @include path('icon-company.svg');
-  } @else if $type == 'social' {
-    @include path('icon-social.svg');
+  @if $type == 'facebook' {
+    @include path('icon-facebook.svg');
+  }
+  @else if $type == 'twitter' {
+    @include path('icon-twitter.svg');
+  }
+  @else if $type == 'github' {
+    @include path('icon-github.svg');
   }
 }
-
-// @mixin data ($attr) {
-//   content: attr($attr);
-//   @extend %data;
-
-//   @if $attr == 'data-start' {
-//     top: -34px;
-//     color: $dark;
-//     height: 20px;
-//     line-height: 30px;
-//     left: 35px;
-//   } @else if $attr == 'data-end' {
-//     height: 23px;
-//     right: 0;
-//     top: -73px;
-//     line-height: 18px;
-//     color: $yellow;
-//   }
-// }

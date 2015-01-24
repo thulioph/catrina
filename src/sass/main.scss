@@ -1,20 +1,15 @@
 // Reset
 @import '_reset';
 
-// Libs
-@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
-
 // Custom
 @import '_typography';
 @import '_base';
 @import '_form';
 
-// Animations
-@import '_animations';
-
 // General styles
 @import '_general';
 
-// Pages
-@import '_organizers';
-@import '_lodging';
+// Sections
+@import '_home';
+@import '_about';
+@import '_contact';
