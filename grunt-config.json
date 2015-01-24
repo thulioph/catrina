@@ -58,6 +58,7 @@
           ,"src/js/APP.Scroll.js"
           ,"src/js/APP.Request.js"
           ,"src/js/APP.Storage.js"
+          ,"src/js/APP.Contact.js"
         ],
 
         "dist/js/libs.min.js": [

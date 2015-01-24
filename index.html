@@ -114,14 +114,12 @@
     <section id="contact" class="contact">
       <h2 class="section-title">Contact</h2>
 
-      <article class="post">
-        <h3 class="post-title">My post</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni accusantium facere est, excepturi libero temporibus, enim maiores et quae.</p>
-
-        <figure class="post-image">
-          <img src="http://dummyimage.com/600x400/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-        </figure>
-      </article>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="contact-name" class="input-primary medium" placeholder="Your Name">
+        <input type="email" name="contact-email" class="input-primary medium" placeholder="Your Email">
+        <textarea class="input-primary medium" name="contact-text" placeholder="Your text"></textarea>
+        <input type="submit" value="Send" class="btn-primary medium">
+      </form>
 
       <aside id="request" class="new-content"></aside>
     </section>
@@ -145,6 +143,7 @@
   <script src="src/js/APP.Scroll.js"></script>
   <script src="src/js/APP.Request.js"></script>
   <script src="src/js/APP.Storage.js"></script>
+  <script src="src/js/APP.Contact.js"></script>
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

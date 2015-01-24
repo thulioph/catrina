@@ -115,12 +115,15 @@ input:focus, select:focus {
 /* line 37, ../../src/sass/_form.scss */
 .btn-primary {
   text-transform: uppercase;
-  color: #004d6e;
-  background-color: #009ee1;
+  color: #009ee1;
+  background-color: #004d6e;
   border-radius: 3px;
   padding: 5px 20px;
   text-align: center;
   border: none;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -128,18 +131,32 @@ input:focus, select:focus {
   appearance: none;
 }
 
-@media (min-width: 768px) {
-  /* line 55, ../../src/sass/_form.scss */
-  .form-group.inline-block {
-    width: 70%;
-  }
+/* line 51, ../../src/sass/_form.scss */
+.input-primary {
+  height: 40px;
+  padding: 5px 10px;
+  margin: 0 auto 10px auto;
+  outline: none;
+  display: block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
-@media (min-width: 992px) {
-  /* line 64, ../../src/sass/_form.scss */
-  .form-group.inline-block {
-    width: 86%;
-  }
+/* line 59, ../../src/sass/_form.scss */
+.input-primary.small {
+  width: 30%;
 }
+/* line 60, ../../src/sass/_form.scss */
+.input-primary.medium {
+  width: 50%;
+}
+/* line 61, ../../src/sass/_form.scss */
+.input-primary.big {
+  width: 100%;
+}
+
 /* line 5, ../../src/sass/_general.scss */
 body {
   font-size: 62.5%;
