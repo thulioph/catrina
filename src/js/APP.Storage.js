@@ -1,13 +1,12 @@
 // ==========================================
-// LocalStorage
+// Local Storage
 // ==========================================
 
 var APP = APP || {};
 APP.Storage = {
-  setUp: function() {
-  },
+  setUp: function() {},
 
-  // converte o conteúdo do ajax em string;
+  // convert return of ajax to string
   convertString: function(chave, html) {
     var that, string;
 
@@ -17,25 +16,25 @@ APP.Storage = {
     that.insertLocalStorage(chave, string);
   },
 
-  // insere o conteúdo no localStorage;
+  // adds content in local storage
   insertLocalStorage: function(text, string) {
     localStorage.setItem(text, string);
   },
 
-  // verifica se o conteúdo existe;
-  getStorageReceitasInterna: function(key, href) {
+  // verify if content is true
+  getStorage: function(key, href, sectionId) {
     var that = this;
 
     if (localStorage.getItem(key) == null) {
-      APP.Request.ReceitasInterna.ajax(href, key);
+      APP.Request.ajax(href, key, sectionId);
     } else {
       that.checkCapaticy(key);
       var href = JSON.parse(localStorage.getItem(key));
-      $('#main').html(href);
+      $('#'+sectionId).html(href);
     }
   },
 
-  // verifica a capacidade do localStorage
+  // verify the capacity of local storage
   checkCapaticy: function(key) {
     var len, max;
 
