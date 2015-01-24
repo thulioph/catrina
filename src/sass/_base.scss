@@ -9,19 +9,16 @@
 // Hexadecimals
 $blue:                      #004d6e;
 $blue-secondary:            #009ee1;
-$white:                     #ffffff;
 $gray:                      #e6e6e6;
 
 // RGB
 $blue-rgb:                  rgb(0, 77, 110);
 $blue-secondary-rgb:        rgb(0, 158, 225);
-$white-rgb:                 rgb(255, 255, 255);
 $gray-rgb:                  rgb(230, 230, 230);
 
 // Names
 $color-primary:         $blue;
-$color-primary-dark:    $blue-secondary;
-$color-secondary:       $white;
+$color-secondary:       $blue-secondary;
 $color-other:           $gray;
 
 // ——————————————————————
