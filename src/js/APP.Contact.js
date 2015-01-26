@@ -9,7 +9,7 @@ APP.Contact = {
   },
 
   submitForm: function() {
-    var formdata, that;
+    var formdata, that, email;
 
     that = this;
 
@@ -17,17 +17,19 @@ APP.Contact = {
       event.preventDefault();
 
       formdata = $('#contact-form').serialize();
-      that.checkStatus(formdata);
+      email = $('#contact-email').val();
+
+      that.checkStatus(email, formdata);
     });
   },
 
-  checkStatus: function(formdata) {
+  checkStatus: function(email, formdata) {
     var that = this;
 
-    if (navigator.onLine == true) {
+    if ($('body').hasClass('js-offline') == false) {
       that.sendForm(formdata);
     } else {
-      // APP.Storage.saveFormData();
+      APP.Storage.insertLocalStorage(email, formdata);
     }
   },
 

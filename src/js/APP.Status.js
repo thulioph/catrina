@@ -27,6 +27,8 @@ APP.Status = {
     body = document.querySelector('body');
     body.classList.remove('js-offline');
     body.removeAttribute('data-status');
+
+    APP.Storage.searchToSend();
   },
 
   statusOff: function() {

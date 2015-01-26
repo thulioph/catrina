@@ -118,12 +118,13 @@ input:focus, select:focus {
   color: #009ee1;
   background-color: #004d6e;
   border-radius: 3px;
-  padding: 5px 20px;
+  padding: 15px 20px;
   text-align: center;
   border: none;
   margin: 0 auto;
   display: block;
   cursor: pointer;
+  font-size: 1.2rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -131,7 +132,7 @@ input:focus, select:focus {
   appearance: none;
 }
 
-/* line 51, ../../src/sass/_form.scss */
+/* line 52, ../../src/sass/_form.scss */
 .input-primary {
   height: 40px;
   padding: 5px 10px;
@@ -144,15 +145,15 @@ input:focus, select:focus {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 59, ../../src/sass/_form.scss */
+/* line 60, ../../src/sass/_form.scss */
 .input-primary.small {
   width: 30%;
 }
-/* line 60, ../../src/sass/_form.scss */
+/* line 61, ../../src/sass/_form.scss */
 .input-primary.medium {
   width: 50%;
 }
-/* line 61, ../../src/sass/_form.scss */
+/* line 62, ../../src/sass/_form.scss */
 .input-primary.big {
   width: 100%;
 }

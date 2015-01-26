@@ -46,5 +46,19 @@ APP.Storage = {
       } else {
         console.warn('Seu localStorage está com: ' + len);
       }
+  },
+
+  // check if have data to send.
+  searchToSend: function() {
+    console.warn('Check if have data..');
+
+    var data = [];
+
+    for (var i = 0; i < localStorage.length; i++){
+      data.push(localStorage.getItem(localStorage.key(i)));
+      APP.Contact.sendForm(data);
+    }
+
+    console.log('Data: ', data);
   }
 }
