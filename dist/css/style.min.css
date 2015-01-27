@@ -105,18 +105,11 @@ input {
 /* line 31, ../../src/sass/_form.scss */
 input:focus, select:focus {
   outline: none;
-  -webkit-box-shadow: 1px 2px #009ee1;
-  -moz-box-shadow: 1px 2px #009ee1;
-  -ms-box-shadow: 1px 2px #009ee1;
-  -o-box-shadow: 1px 2px #009ee1;
-  box-shadow: 1px 2px #009ee1;
 }
 
 /* line 37, ../../src/sass/_form.scss */
 .btn-primary {
   text-transform: uppercase;
-  color: #009ee1;
-  background-color: #004d6e;
   border-radius: 3px;
   padding: 15px 20px;
   text-align: center;
@@ -176,7 +169,6 @@ body.js-offline::after {
   top: 0;
   left: 0;
   text-align: center;
-  color: #e6e6e6;
   font-size: 1.4rem;
   line-height: 1.4rem;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -188,16 +180,12 @@ body.js-offline::after {
 
 /* line 32, ../../src/sass/_general.scss */
 ::-moz-selection {
-  background: #004d6e;
   text-shadow: none;
-  color: #e6e6e6;
 }
 
 /* line 38, ../../src/sass/_general.scss */
 ::selection {
-  background: #004d6e;
   text-shadow: none;
-  color: #e6e6e6;
 }
 
 /* line 44, ../../src/sass/_general.scss */
@@ -218,7 +206,6 @@ body.js-offline::after {
 /* line 57, ../../src/sass/_general.scss */
 .nav-link {
   line-height: 60px;
-  color: #e6e6e6;
   font-size: 1.2rem;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-transform: uppercase;
@@ -235,8 +222,6 @@ body.js-offline::after {
 /* line 71, ../../src/sass/_general.scss */
 .nav-link.request {
   text-align: center;
-  border-top: 1px solid #e6e6e6;
-  background-color: #e6e6e6;
   color: #000;
 }
 /* line 77, ../../src/sass/_general.scss */
@@ -287,7 +272,6 @@ body.js-offline::after {
 
 /* line 122, ../../src/sass/_general.scss */
 .post-image {
-  background-color: #e6e6e6;
   padding: 10px 10px 20px 10px;
   margin-top: 30px;
 }
@@ -312,7 +296,6 @@ body.js-offline::after {
 /* line 140, ../../src/sass/_general.scss */
 .footer-primary p {
   line-height: 40px;
-  color: #e6e6e6;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1.2rem;
 }
@@ -320,17 +303,6 @@ body.js-offline::after {
 /* line 5, ../../src/sass/_home.scss */
 .home {
   padding-top: 60px;
-  background-color: #e6e6e6;
-}
-
-/* line 5, ../../src/sass/_about.scss */
-.about {
-  background-color: #004d6e;
-}
-
-/* line 5, ../../src/sass/_contact.scss */
-.contact {
-  background-color: #009ee1;
 }
 
 /* line 9, ../../src/sass/_contact.scss */

@@ -7,19 +7,36 @@
 // ——————————————
 
 // Hexadecimals
-$blue:                      #004d6e;
-$blue-secondary:            #009ee1;
-$gray:                      #e6e6e6;
+$dark:                       #1B2126;
+$dark-primary:               #6C7980;
+$dark-secondary:             #2E3B4E;
+$white:                      #FFFFFF;
+$white-primary:              #FAFAFA;
+$gray:                       #E0E0E0;
+$gray-primary:               #5F6A7D;
+$blue-primary:               #2586B7;
+
 
 // RGB
-$blue-rgb:                  rgb(0, 77, 110);
-$blue-secondary-rgb:        rgb(0, 158, 225);
-$gray-rgb:                  rgb(230, 230, 230);
+$dark-rgb:                   rgb(27, 33, 38);
+$dark-primary-rgb:           rgb(108, 121, 128);
+$dark-secondary-rgb:         rgb(46, 59, 78);
+$white-rgb:                  rgb(255, 255, 255);
+$white-primary-rgb:          rgb(250, 250, 250);
+$gray-rgb:                   rgb(224, 224, 224);
+$gray-primary:               rgb(95, 106, 125);
+$blue-primary:               rgb(37, 134, 183);
 
 // Names
-$color-primary:         $blue;
-$color-secondary:       $blue-secondary;
-$color-other:           $gray;
+$bg-primary:                 $dark;
+$link-secondary:             $dark-primary;
+$title-primary:              $dark-secondary;
+$bg-clean:                   $white;
+$bg-featured:                $white-primary;
+$border-primary:             $gray;
+$text-primary:               $gray-primary;
+$link-primary:               $blue-primary;
+
 
 // ——————————————————————
 //     Mixins

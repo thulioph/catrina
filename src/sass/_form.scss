@@ -30,14 +30,14 @@ input {
 
   &:focus {
     outline: none;
-    @include bsd(1px, 2px, 3px, $color-secondary);
+    // @include bsd(1px, 2px, 3px, $color-secondary);
   }
 }
 
 .btn-primary {
   text-transform: uppercase;
-  color: $color-secondary;
-  background-color: $color-primary;
+  // color: $color-secondary;
+  // background-color: $color-primary;
   border-radius: 3px;
   padding: 15px 20px;
   text-align: center;

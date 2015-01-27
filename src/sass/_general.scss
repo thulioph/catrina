@@ -17,7 +17,7 @@ body {
       top: 0;
       left: 0;
       text-align: center;
-      color: $color-other;
+      // color: $color-other;
       font-size: $fs-small;
       line-height: $fs-small;
       font-family: $ff-primary;
@@ -30,15 +30,15 @@ body {
 }
 
 ::-moz-selection {
-  background: $color-primary;
+  // background: $color-primary;
+  // color: $color-other;
   text-shadow: none;
-  color: $color-other;
 }
 
 ::selection {
-  background: $color-primary;
   text-shadow: none;
-  color: $color-other;
+  // background: $color-primary;
+  // color: $color-other;
 }
 
 .nav-primary {
@@ -56,7 +56,7 @@ body {
 
 .nav-link {
   line-height: 60px;
-  color: $color-other;
+  // color: $color-other;
   font-size: $fs-extra-small;
   font-family: $ff-primary;
   text-transform: uppercase;
@@ -70,8 +70,8 @@ body {
 
   &.request {
     text-align: center;
-    border-top: 1px solid $color-other;
-    background-color: $color-other;
+    // border-top: 1px solid $color-other;
+    // background-color: $color-other;
     color: #000;
 
     &:hover {
@@ -120,7 +120,7 @@ body {
 }
 
 .post-image {
-  background-color: $color-other;
+  // background-color: $color-other;
   padding: 10px 10px 20px 10px;
   margin-top: 30px;
 
@@ -139,7 +139,7 @@ body {
 
   p {
     line-height: 40px;
-    color: $color-other;
+    // color: $color-other;
     font-family: $ff-primary;
     font-size: $fs-extra-small;
   }
