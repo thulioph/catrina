@@ -69,91 +69,116 @@ table {
 }
 
 @font-face {
-  font-family: 'sourcesanspro-light';
-  src: url("../../fonts/sourcesanspro-light-webfont.eot");
-  src: url("../../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-light-webfont.svg#FuturaLTHeavy") format("svg");
+  font-family: 'OpenSansLight';
+  src: url("../../fonts/OpenSansLight.eot");
+  src: url("../../fonts/OpenSansLight.eot") format("embedded-opentype"), url("../../fonts/OpenSansLight.woff2") format("woff2"), url("../../fonts/OpenSansLight.woff") format("woff"), url("../../fonts/OpenSansLight.ttf") format("truetype"), url("../../fonts/OpenSansLight.svg#OpenSansLight") format("svg");
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../../fonts/OpenSansRegular.eot");
+  src: url("../../fonts/OpenSansRegular.eot") format("embedded-opentype"), url("../../fonts/OpenSansRegular.woff2") format("woff2"), url("../../fonts/OpenSansRegular.woff") format("woff"), url("../../fonts/OpenSansRegular.ttf") format("truetype"), url("../../fonts/OpenSansRegular.svg#OpenSansRegular") format("svg");
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../../fonts/OpenSansBold.eot");
+  src: url("../../fonts/OpenSansBold.eot") format("embedded-opentype"), url("../../fonts/OpenSansBold.woff2") format("woff2"), url("../../fonts/OpenSansBold.woff") format("woff"), url("../../fonts/OpenSansBold.ttf") format("truetype"), url("../../fonts/OpenSansBold.svg#OpenSansBold") format("svg");
 }
 /* line 5, ../../src/sass/_form.scss */
 ::-webkit-input-placeholder {
-  color: gray;
+  color: #5f6a7d;
+}
+
+/* line 7, ../../src/sass/_form.scss */
+:-moz-placeholder {
+  color: #5f6a7d;
 }
 
 /* line 9, ../../src/sass/_form.scss */
-:-moz-placeholder {
-  color: gray;
+::-moz-placeholder {
+  color: #5f6a7d;
+}
+
+/* line 11, ../../src/sass/_form.scss */
+:-ms-input-placeholder {
+  color: #5f6a7d;
 }
 
 /* line 13, ../../src/sass/_form.scss */
-::-moz-placeholder {
-  color: gray;
-}
-
-/* line 17, ../../src/sass/_form.scss */
-:-ms-input-placeholder {
-  color: gray;
-}
-
-/* line 22, ../../src/sass/_form.scss */
-select:focus {
-  border: none;
-}
-
-/* line 28, ../../src/sass/_form.scss */
-input {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-/* line 31, ../../src/sass/_form.scss */
-input:focus, select:focus {
+input:active,
+textarea:active, input:focus,
+textarea:focus {
   outline: none;
-  -webkit-box-shadow: 1px 2px #009ee1;
-  -moz-box-shadow: 1px 2px #009ee1;
-  -ms-box-shadow: 1px 2px #009ee1;
-  -o-box-shadow: 1px 2px #009ee1;
-  box-shadow: 1px 2px #009ee1;
+  border: 1px solid #2586b7;
 }
 
-/* line 37, ../../src/sass/_form.scss */
+/* line 18, ../../src/sass/_form.scss */
+textarea {
+  resize: vertical;
+  min-height: 65px;
+}
+
+/* line 23, ../../src/sass/_form.scss */
+input,
+textarea {
+  font-family: "OpenSansLight";
+  -webkit-transition: border 0.2s 0s linear;
+  -moz-transition: border 0.2s 0s linear;
+  -ms-transition: border 0.2s 0s linear;
+  -o-transition: border 0.2s 0s linear;
+  transition: border 0.2s 0s linear;
+}
+
+/* line 32, ../../src/sass/_form.scss */
 .btn-primary {
   text-transform: uppercase;
-  color: #009ee1;
-  background-color: #004d6e;
-  border-radius: 3px;
-  padding: 15px 20px;
+  padding: 5px 20px;
   text-align: center;
   border: none;
   margin: 0 auto;
+  color: #FFFFFF;
+  background-color: #2586b7;
+  font-size: 1rem;
+  font-family: "OpenSansLight";
   display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 1.2rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  -webkit-transition: background 0.2s 0s ease;
+  -moz-transition: background 0.2s 0s ease;
+  -ms-transition: background 0.2s 0s ease;
+  -o-transition: background 0.2s 0s ease;
+  transition: background 0.2s 0s ease;
+}
+/* line 47, ../../src/sass/_form.scss */
+.btn-primary:hover {
+  background-color: #2E3B4E;
 }
 
-/* line 52, ../../src/sass/_form.scss */
+/* line 50, ../../src/sass/_form.scss */
 .input-primary {
   height: 40px;
   padding: 5px 10px;
-  margin: 0 auto 10px auto;
+  margin-bottom: 10px;
   outline: none;
-  display: block;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  border: 1px solid #E0E0E0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 60, ../../src/sass/_form.scss */
+/* line 58, ../../src/sass/_form.scss */
 .input-primary.small {
   width: 30%;
 }
-/* line 61, ../../src/sass/_form.scss */
+/* line 59, ../../src/sass/_form.scss */
 .input-primary.medium {
   width: 50%;
 }
-/* line 62, ../../src/sass/_form.scss */
+/* line 60, ../../src/sass/_form.scss */
 .input-primary.big {
   width: 100%;
 }
@@ -176,10 +201,9 @@ body.js-offline::after {
   top: 0;
   left: 0;
   text-align: center;
-  color: #e6e6e6;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "OpenSansLight";
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   overflow: hidden;
@@ -188,152 +212,292 @@ body.js-offline::after {
 
 /* line 32, ../../src/sass/_general.scss */
 ::-moz-selection {
-  background: #004d6e;
+  background: #FAFAFA;
+  color: #2586b7;
   text-shadow: none;
-  color: #e6e6e6;
 }
 
 /* line 38, ../../src/sass/_general.scss */
 ::selection {
-  background: #004d6e;
+  background: #FAFAFA;
+  color: #2586b7;
   text-shadow: none;
-  color: #e6e6e6;
 }
 
-/* line 44, ../../src/sass/_general.scss */
-.nav-primary {
-  text-align: center;
+/* line 49, ../../src/sass/_general.scss */
+.header-primary {
   width: 100%;
-  height: 60px;
-  background-color: #000;
-  position: fixed;
-}
-
-/* line 52, ../../src/sass/_general.scss */
-.nav-item {
-  display: inline-block;
-  margin-right: 20px;
+  height: 385px;
+  position: relative;
+  padding-top: 20px;
+  background-color: #1B2126;
 }
 
 /* line 57, ../../src/sass/_general.scss */
-.nav-link {
-  line-height: 60px;
-  color: #e6e6e6;
-  font-size: 1.2rem;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
+.main {
   width: 100%;
-  height: 100%;
-  padding: 0 10px;
+  min-height: 800px;
+  display: block;
+  background-color: #FFFFFF;
 }
-/* line 69, ../../src/sass/_general.scss */
-.nav-link.js-nav-active {
-  background-color: orange;
-}
-/* line 71, ../../src/sass/_general.scss */
-.nav-link.request {
+
+/* line 64, ../../src/sass/_general.scss */
+.logo {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
-  background-color: #e6e6e6;
-  color: #000;
 }
-/* line 77, ../../src/sass/_general.scss */
-.nav-link.request:hover {
-  background-color: transparent;
+/* line 70, ../../src/sass/_general.scss */
+.logo img {
+  width: 250px;
+  height: 250px;
+}
+/* line 75, ../../src/sass/_general.scss */
+.logo span {
+  text-indent: -9999px;
+}
+
+/* line 78, ../../src/sass/_general.scss */
+.footer-primary {
+  width: 100%;
+  height: 245px;
+  background-color: #1B2126;
 }
 
 /* line 84, ../../src/sass/_general.scss */
-.main section {
-  min-height: 700px;
-  padding-bottom: 20px;
-}
-
-/* line 90, ../../src/sass/_general.scss */
-.section-title {
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  padding: 20px 0;
-  color: #fff;
+.nav-primary {
+  height: 60px;
+  width: 100%;
+  margin-top: 75px;
   text-align: center;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #FAFAFA;
 }
 
-/* line 99, ../../src/sass/_general.scss */
-.post {
-  margin-top: 40px;
-  padding: 10px 12px;
+/* line 93, ../../src/sass/_general.scss */
+.nav-item {
+  display: inline-block;
 }
-/* line 103, ../../src/sass/_general.scss */
-.post p {
-  text-align: left;
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  font-family: "sourcesanspro-light";
+
+/* line 95, ../../src/sass/_general.scss */
+.nav-link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 0 20px;
+  font-family: "OpenSansLight";
+  color: #6C7980;
+  font-size: 1rem;
+  -webkit-transition: color 0.2s 0s linear;
+  -moz-transition: color 0.2s 0s linear;
+  -ms-transition: color 0.2s 0s linear;
+  -o-transition: color 0.2s 0s linear;
+  transition: color 0.2s 0s linear;
+}
+/* line 106, ../../src/sass/_general.scss */
+.nav-link:hover {
+  color: #2586b7;
+}
+
+/* line 109, ../../src/sass/_general.scss */
+.section.home, .section.about, .contact .content {
+  width: 80%;
 }
 
 /* line 111, ../../src/sass/_general.scss */
-.post-title {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: left;
-  font-size: 1.8rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  padding: 0 0 5px 0;
-  border-bottom: 1px solid #000;
-}
-
-/* line 122, ../../src/sass/_general.scss */
-.post-image {
-  background-color: #e6e6e6;
-  padding: 10px 10px 20px 10px;
-  margin-top: 30px;
-}
-/* line 127, ../../src/sass/_general.scss */
-.post-image img {
-  max-width: 100%;
-  width: 100%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 134, ../../src/sass/_general.scss */
-.footer-primary {
-  width: 100%;
-  height: 40px;
+.section {
+  margin: 70px auto 0 auto;
   text-align: center;
-  background-color: #000;
+  padding-bottom: 20px;
 }
-/* line 140, ../../src/sass/_general.scss */
-.footer-primary p {
-  line-height: 40px;
-  color: #e6e6e6;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+/* line 120, ../../src/sass/_general.scss */
+.section-title {
+  font-family: "OpenSansBold";
+  font-size: 1.4rem;
+  color: #2E3B4E;
+  text-transform: none;
+}
+
+/* line 127, ../../src/sass/_general.scss */
+.section-description {
+  line-height: 1.4rem;
+  font-size: 1rem;
+  color: #5f6a7d;
+  font-family: "OpenSansRegular";
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* line 137, ../../src/sass/_general.scss */
+.slide-primary {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 142, ../../src/sass/_general.scss */
+.slide-image {
+  display: inline-block;
+}
+/* line 145, ../../src/sass/_general.scss */
+.slide-image:focus {
+  outline: none;
+  border: none;
+}
+/* line 150, ../../src/sass/_general.scss */
+.slide-image img {
+  max-width: 100%;
+}
+
+/* line 154, ../../src/sass/_general.scss */
+.slick-dots li {
+  display: inline-block;
+  margin: 5px;
+}
+/* line 158, ../../src/sass/_general.scss */
+.slick-dots li.slick-active {
+  background-color: pink;
+}
+
+/* line 162, ../../src/sass/_general.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 910;
+}
+
+/* line 169, ../../src/sass/_general.scss */
+.slick-prev {
+  left: 0;
+}
+
+/* line 171, ../../src/sass/_general.scss */
+.slick-next {
+  right: 0;
+}
+
+/* line 174, ../../src/sass/_general.scss */
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #2586b7;
+  font-family: "OpenSansRegular";
+}
+
+/* line 182, ../../src/sass/_general.scss */
+.post {
+  background-color: #E0E0E0;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+/* line 187, ../../src/sass/_general.scss */
+.post.new {
+  background-color: #2586b7;
+}
+/* line 190, ../../src/sass/_general.scss */
+.post.new h3 {
+  color: #FFFFFF;
+}
+/* line 191, ../../src/sass/_general.scss */
+.post.new p {
+  color: #FFFFFF;
+}
+
+/* line 195, ../../src/sass/_general.scss */
+.post-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46%;
+  margin: 10px;
+  text-align: left;
+}
+/* line 202, ../../src/sass/_general.scss */
+.post-content h3 {
+  font-family: "OpenSansRegular";
+  text-transform: uppercase;
   font-size: 1.2rem;
+  color: #5f6a7d;
+}
+/* line 209, ../../src/sass/_general.scss */
+.post-content p {
+  font-family: "OpenSansLight";
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.4rem;
 }
 
-/* line 5, ../../src/sass/_home.scss */
-.home {
-  padding-top: 60px;
-  background-color: #e6e6e6;
+/* line 217, ../../src/sass/_general.scss */
+.post-image {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  height: 202px;
+}
+/* line 224, ../../src/sass/_general.scss */
+.post-image img {
+  -webkit-transition: transform 0.2s 0s ease-out;
+  -moz-transition: transform 0.2s 0s ease-out;
+  -ms-transition: transform 0.2s 0s ease-out;
+  -o-transition: transform 0.2s 0s ease-out;
+  transition: transform 0.2s 0s ease-out;
+}
+/* line 226, ../../src/sass/_general.scss */
+.post-image figcaption {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -60px;
+  text-transform: uppercase;
+  color: #1B2126;
+  background-color: #FAFAFA;
+  text-align: center;
+  font-family: "OpenSansLight";
+  font-size: 1rem;
+  -webkit-transition: bottom 0.2s 0s ease-out;
+  -moz-transition: bottom 0.2s 0s ease-out;
+  -ms-transition: bottom 0.2s 0s ease-out;
+  -o-transition: bottom 0.2s 0s ease-out;
+  transition: bottom 0.2s 0s ease-out;
+}
+/* line 241, ../../src/sass/_general.scss */
+.post-image:hover figcaption {
+  bottom: 0;
+}
+/* line 243, ../../src/sass/_general.scss */
+.post-image:hover img {
+  -webkit-transform: translate3d(0, -40px, 0);
+  -moz-transform: translate3d(0, -40px, 0);
+  -ms-transform: translate3d(0, -40px, 0);
+  -o-transform: translate3d(0, -40px, 0);
+  transform: translate3d(0, -40px, 0);
+  -webkit-filter: url(#svg-blur);
+  -o-filter: url(#svg-blur);
+  filter: url(#svg-blur);
 }
 
-/* line 5, ../../src/sass/_about.scss */
-.about {
-  background-color: #004d6e;
+/* line 252, ../../src/sass/_general.scss */
+#svg-filter {
+  display: none;
 }
 
-/* line 5, ../../src/sass/_contact.scss */
+/* line 260, ../../src/sass/_general.scss */
 .contact {
-  background-color: #009ee1;
+  padding: 70px 0;
+  margin-bottom: 70px;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #FAFAFA;
+}
+/* line 267, ../../src/sass/_general.scss */
+.contact .content {
+  margin: 0 auto;
 }
 
-/* line 9, ../../src/sass/_contact.scss */
-.new-content {
-  background-color: orangered;
+/* line 273, ../../src/sass/_general.scss */
+.contact-form {
+  margin-top: 30px;
 }

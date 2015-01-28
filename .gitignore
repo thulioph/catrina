@@ -4,3 +4,4 @@ node_modules/*
 .git/*
 bower_components/*
 .gitignore
+to-do.md
