@@ -37,19 +37,19 @@
 
   <!-- FACEBOOK  -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.catrina.com" />
+  <meta property="og:url" content="http://thulioph.github.io/catrina" />
   <meta property="og:title" content="Catrina - Boilerplate Front-end" />
-  <meta property="og:image" content="http://www.catrina.com/dist/images/facebook.png" />
+  <meta property="og:image" content="http://thulioph.github.io/catrina/dist/images/og-facebook.png" />
   <meta property="og:description" content="Boilerplate para projetos Front-end." />
 
   <!-- TWITTER -->
   <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:card" value="summary">
-  <meta name="twitter:creator" value="@catrina">
-  <meta name="twitter:site" value="@catrina">
+  <meta name="twitter:creator" value="@thulioph_">
+  <meta name="twitter:site" value="@thulioph_">
   <meta name="twitter:title" content="Catrina - Boilerplate Front-end">
   <meta name="twitter:description" content="Boilerplate para projetos Front-end.">
-  <meta name="twitter:image:src" content="http://www.catrina.com/dist/images/facebook.png">
+  <meta name="twitter:image:src" content="http://thulioph.github.io/catrina/dist/images/og-facebook.png">
 
   <!-- APPLE TOUCH ICON -->
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
@@ -59,78 +59,131 @@
   <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad@2x.png">
 
   <!-- HUMANS -->
-  <link type="text/plain" rel="author" href="http://www.catrina.com/humans.txt" />
+  <link type="text/plain" rel="author" href="http://thulioph.github.io/catrina/humans.txt" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
-	<header class="header-primary">
-		<nav class="nav-primary">
-			<ul class="nav-list">
-				<li class="nav-item">
-					<a href="#home" class="nav-link" title="Home">Home</a>
-				</li>
 
-				<li class="nav-item">
-					<a href="#about" class="nav-link" title="About">About</a>
-				</li>
+  <header class="header-primary">
+    <h1 class="logo">
+      <figure>
+        <img src="src/images/logo.png" alt="Logo Catrina">
+      </figure>
 
-				<li class="nav-item">
-					<a href="#contact" class="nav-link" title="Contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+      <span>Catrina</span>
+    </h1>
 
-	<main class="main" role="main">
-    <section id="home" class="home">
-      <h2 class="section-title">Home</h2>
+    <nav class="nav-primary">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link" title="Home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link" title="About">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" title="Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <section id="home" class="section home">
+      <h2 class="section-title">Aqui vem um título para sua sessão</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae amet error eligendi ab, consequatur delectus molestias minus aliquid vel sequi facilis, itaque a veritatis molestiae doloremque hic incidunt pariatur sit, voluptatem unde non totam! Ducimus autem mollitia nulla voluptatibus.
+      </p>
+
+      <div id="slide" class="slide-primary">
+        <figure class="slide-image">
+          <img src="http://dummyimage.com/800x350/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        </figure>
+
+        <figure class="slide-image">
+          <img src="http://dummyimage.com/800x350/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        </figure>
+
+        <figure class="slide-image">
+          <img src="http://dummyimage.com/800x350/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2 class="section-title">Pequeno título</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio nihil assumenda facere quasi minus molestiae ducimus perferendis ratione numquam.
+      </p>
+
+      <a href="request.html" class="link request" title="Clique para fazer a requisição de um arquivo externo">
+        Link para request de arquivos externos.
+      </a>
+
+      <div id="request"></div>
 
       <article class="post">
-        <h3 class="post-title">My post</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni accusantium facere est, excepturi libero temporibus, enim maiores et quae.</p>
+        <div class="post-content">
+          <h3>Título do meu post</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cupiditate eligendi quisquam atque, possimus, voluptates quam nulla quas libero, vero, nisi architecto. Animi sequi possimus doloribus, nostrum odit labore aspernatur consectetur non ratione asperiores odio saepe, minima perspiciatis quasi voluptate? Porro rem a culpa possimus velit, nihil facere voluptatem at unde ipsam vel voluptatum aliquam, dolorem, mollitia dignissimos perspiciatis fuga?
+          </p>
+        </div>
 
         <figure class="post-image">
-          <img src="http://dummyimage.com/600x400/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+
+          <figcaption>Legenda da imagem</figcaption>
         </figure>
+      </article>
+
+      <article class="post">
+        <figure class="post-image">
+          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+
+          <figcaption>Legenda da imagem</figcaption>
+        </figure>
+
+        <div class="post-content">
+          <h3>Título do meu post</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cupiditate eligendi quisquam atque, possimus, voluptates quam nulla quas libero, vero, nisi architecto. Animi sequi possimus doloribus, nostrum odit labore aspernatur consectetur non ratione asperiores odio saepe, minima perspiciatis quasi voluptate? Porro rem a culpa possimus velit, nihil facere voluptatem at unde ipsam vel voluptatum aliquam, dolorem, mollitia dignissimos perspiciatis fuga?
+          </p>
+        </div>
       </article>
     </section>
 
-    <section id="about" class="about">
-      <h2 class="section-title">About</h2>
+    <section id="contact" class="section contact">
+      <div class="content">
+        <h2 class="section-title">Mais um título</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugiat alias eum labore adipisci, quas, aliquam consequuntur ratione nam, tenetur, eaque minus quia illum optio?
+        </p>
 
-      <article class="post">
-        <h3 class="post-title">My post</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni accusantium facere est, excepturi libero temporibus, enim maiores et quae.</p>
-
-        <figure class="post-image">
-          <img src="http://dummyimage.com/600x400/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-        </figure>
-      </article>
+        <form id="contact-form" class="contact-form">
+          <input id="contact-name" type="text" name="contact-name" class="input-primary medium" placeholder="Your Name" required>
+          <input id="contact-email" type="email" name="contact-email" class="input-primary medium" placeholder="Your Email" required>
+          <textarea id="contact-textarea" class="input-primary medium" name="contact-text" placeholder="Your text" required></textarea>
+          <input type="submit" value="Send" class="btn-primary medium">
+        </form>
+      </div>
     </section>
+  </main>
 
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contact</h2>
+  <footer class="footer-primary">
+  </footer>
 
-      <form id="contact-form" class="contact-form">
-        <input id="contact-name" type="text" name="contact-name" class="input-primary medium" placeholder="Your Name" required>
-        <input id="contact-email" type="email" name="contact-email" class="input-primary medium" placeholder="Your Email" required>
-        <textarea id="contact-textarea" class="input-primary medium" name="contact-text" placeholder="Your text" required></textarea>
-        <input type="submit" value="Send" class="btn-primary medium">
-      </form>
-
-      <aside id="request" class="new-content"></aside>
-    </section>
-
-    <a href="request.html" class="nav-link request" title="Request">Load more</a>
-
-	</main>
-
-	<footer id="footer-primary" class="footer-primary">
-    <p>Copyright © 2015.</p>
-	</footer>
+  <!-- SVG Blur Filter -->
+  <svg id="svg-filter">
+    <filter id="svg-blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
+    </filter>
+  </svg>
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
@@ -141,6 +194,7 @@
   <script src="src/js/APP.Language.js"></script>
   <script src="src/js/APP.Tracking.js"></script>
   <script src="src/js/APP.Scroll.js"></script>
+  <script src="src/js/APP.SLide.js"></script>
   <script src="src/js/APP.Request.js"></script>
   <script src="src/js/APP.Storage.js"></script>
   <script src="src/js/APP.Contact.js"></script>
