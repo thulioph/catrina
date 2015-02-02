@@ -53,6 +53,7 @@ textarea {
   margin-bottom: 10px;
   outline: none;
   border: 1px solid $border-primary;
+  font-size: ($fs-extra-small)-.2;
   @include bdr(5px);
 
   &.small { width: 30%; }

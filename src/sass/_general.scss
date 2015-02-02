@@ -70,11 +70,75 @@ body {
   line-height: 320px;
 }
 
+// footer
 .footer-primary {
+  position: relative;
   width: 100%;
-  height: 245px;
+  min-height: 245px;
+  text-align: center;
   background-color: $bg-primary;
+
+  p {
+    color: $bg-featured;
+    font-size: ($fs-extra-small)-.2;
+    font-family: $ff-primary;
+    display: inline-block;
+    top: 90px;
+    position: relative;
+  }
 }
+
+.social-item {
+  width: 280px;
+  border: 1px solid $bg-featured;
+  height: 45px;
+  display: inline-block;
+  margin: 70px 10px 0 0;
+}
+
+.social-link {
+  line-height: 45px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $border-primary;
+  font-family: $ff-general;
+  font-size: ($fs-extra-small)-.2;
+  @include transition(all, .2s, 0s, ease-out);
+
+  &:hover {
+    background-color: $border-primary;
+    color: $bg-primary;
+  }
+}
+
+.back-top {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  z-index: 10;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  opacity: 0;
+  @include rotate(-90deg);
+  @include bdr(4px);
+
+  background-color: $border-primary;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40px 40px;
+  @include path('icon-arrow.svg');
+
+  @include transition(opacity, .2s, 0s, linear);
+
+  &.js-show { opacity: 1; }
+
+  &:hover { opacity: .5; }
+}
+// ===
 
 // nav
 .nav-primary {
