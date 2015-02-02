@@ -73,6 +73,13 @@ table {
   src: url("../../fonts/sourcesanspro-light-webfont.eot");
   src: url("../../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-light-webfont.svg#FuturaLTHeavy") format("svg");
 }
+@font-face {
+  font-family: 'sverige_script_decorated_deRg';
+  src: url("../../fonts/sverigescriptdecorated_demo-webfont.eot");
+  src: url("../../fonts/sverigescriptdecorated_demo-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/sverigescriptdecorated_demo-webfont.woff2") format("woff2"), url("../../fonts/sverigescriptdecorated_demo-webfont.woff") format("woff"), url("../../fonts/sverigescriptdecorated_demo-webfont.ttf") format("truetype"), url("../../fonts/sverigescriptdecorated_demo-webfont.svg#sverige_script_decorated_deRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 5, ../../src/sass/_form.scss */
 ::-webkit-input-placeholder {
   color: gray;
