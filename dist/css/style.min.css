@@ -83,6 +83,13 @@ table {
   src: url("../../fonts/OpenSansBold.eot");
   src: url("../../fonts/OpenSansBold.eot") format("embedded-opentype"), url("../../fonts/OpenSansBold.woff2") format("woff2"), url("../../fonts/OpenSansBold.woff") format("woff"), url("../../fonts/OpenSansBold.ttf") format("truetype"), url("../../fonts/OpenSansBold.svg#OpenSansBold") format("svg");
 }
+@font-face {
+  font-family: 'sverige_script_decorated_deRg';
+  src: url("../../fonts/sverigescriptdecorated_demo-webfont.eot");
+  src: url("../../fonts/sverigescriptdecorated_demo-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/sverigescriptdecorated_demo-webfont.woff2") format("woff2"), url("../../fonts/sverigescriptdecorated_demo-webfont.woff") format("woff"), url("../../fonts/sverigescriptdecorated_demo-webfont.ttf") format("truetype"), url("../../fonts/sverigescriptdecorated_demo-webfont.svg#sverige_script_decorated_deRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 5, ../../src/sass/_form.scss */
 ::-webkit-input-placeholder {
   color: #5f6a7d;
@@ -243,29 +250,22 @@ body.js-offline::after {
 
 /* line 64, ../../src/sass/_general.scss */
 .logo {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  font-family: "sverige_script_decorated_deRg";
+  font-size: 7rem;
+  color: #FAFAFA;
   text-align: center;
-}
-/* line 70, ../../src/sass/_general.scss */
-.logo img {
-  width: 250px;
   height: 250px;
-}
-/* line 75, ../../src/sass/_general.scss */
-.logo span {
-  text-indent: -9999px;
+  line-height: 320px;
 }
 
-/* line 78, ../../src/sass/_general.scss */
+/* line 73, ../../src/sass/_general.scss */
 .footer-primary {
   width: 100%;
   height: 245px;
   background-color: #1B2126;
 }
 
-/* line 84, ../../src/sass/_general.scss */
+/* line 79, ../../src/sass/_general.scss */
 .nav-primary {
   height: 60px;
   width: 100%;
@@ -274,13 +274,27 @@ body.js-offline::after {
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
+/* line 87, ../../src/sass/_general.scss */
+.nav-primary.js-nav-active {
+  position: fixed;
+  top: -76px;
+  z-index: 901;
+}
 
-/* line 93, ../../src/sass/_general.scss */
+/* line 94, ../../src/sass/_general.scss */
 .nav-item {
   display: inline-block;
 }
+/* line 97, ../../src/sass/_general.scss */
+.nav-item.js-nav-active {
+  background-color: #2586b7;
+}
+/* line 100, ../../src/sass/_general.scss */
+.nav-item.js-nav-active .nav-link {
+  color: #FFFFFF;
+}
 
-/* line 95, ../../src/sass/_general.scss */
+/* line 104, ../../src/sass/_general.scss */
 .nav-link {
   display: block;
   text-decoration: none;
@@ -296,24 +310,24 @@ body.js-offline::after {
   -o-transition: color 0.2s 0s linear;
   transition: color 0.2s 0s linear;
 }
-/* line 106, ../../src/sass/_general.scss */
+/* line 115, ../../src/sass/_general.scss */
 .nav-link:hover {
   color: #2586b7;
 }
 
-/* line 109, ../../src/sass/_general.scss */
+/* line 118, ../../src/sass/_general.scss */
 .section.home, .section.about, .contact .content {
   width: 80%;
 }
 
-/* line 111, ../../src/sass/_general.scss */
+/* line 120, ../../src/sass/_general.scss */
 .section {
   margin: 70px auto 0 auto;
   text-align: center;
   padding-bottom: 20px;
 }
 
-/* line 120, ../../src/sass/_general.scss */
+/* line 129, ../../src/sass/_general.scss */
 .section-title {
   font-family: "OpenSansBold";
   font-size: 1.4rem;
@@ -321,7 +335,7 @@ body.js-offline::after {
   text-transform: none;
 }
 
-/* line 127, ../../src/sass/_general.scss */
+/* line 136, ../../src/sass/_general.scss */
 .section-description {
   line-height: 1.4rem;
   font-size: 1rem;
@@ -331,37 +345,37 @@ body.js-offline::after {
   margin: 20px auto;
 }
 
-/* line 137, ../../src/sass/_general.scss */
+/* line 146, ../../src/sass/_general.scss */
 .slide-primary {
   overflow: hidden;
   position: relative;
 }
 
-/* line 142, ../../src/sass/_general.scss */
+/* line 151, ../../src/sass/_general.scss */
 .slide-image {
   display: inline-block;
 }
-/* line 145, ../../src/sass/_general.scss */
+/* line 154, ../../src/sass/_general.scss */
 .slide-image:focus {
   outline: none;
   border: none;
 }
-/* line 150, ../../src/sass/_general.scss */
+/* line 159, ../../src/sass/_general.scss */
 .slide-image img {
   max-width: 100%;
 }
 
-/* line 154, ../../src/sass/_general.scss */
+/* line 163, ../../src/sass/_general.scss */
 .slick-dots li {
   display: inline-block;
   margin: 5px;
 }
-/* line 158, ../../src/sass/_general.scss */
+/* line 167, ../../src/sass/_general.scss */
 .slick-dots li.slick-active {
   background-color: pink;
 }
 
-/* line 162, ../../src/sass/_general.scss */
+/* line 171, ../../src/sass/_general.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -369,17 +383,17 @@ body.js-offline::after {
   z-index: 910;
 }
 
-/* line 169, ../../src/sass/_general.scss */
+/* line 178, ../../src/sass/_general.scss */
 .slick-prev {
   left: 0;
 }
 
-/* line 171, ../../src/sass/_general.scss */
+/* line 180, ../../src/sass/_general.scss */
 .slick-next {
   right: 0;
 }
 
-/* line 174, ../../src/sass/_general.scss */
+/* line 183, ../../src/sass/_general.scss */
 .link {
   text-decoration: none;
   font-size: 1rem;
@@ -387,26 +401,26 @@ body.js-offline::after {
   font-family: "OpenSansRegular";
 }
 
-/* line 182, ../../src/sass/_general.scss */
+/* line 191, ../../src/sass/_general.scss */
 .post {
   background-color: #E0E0E0;
   margin-top: 30px;
   padding: 20px 0;
 }
-/* line 187, ../../src/sass/_general.scss */
+/* line 196, ../../src/sass/_general.scss */
 .post.new {
   background-color: #2586b7;
 }
-/* line 190, ../../src/sass/_general.scss */
+/* line 199, ../../src/sass/_general.scss */
 .post.new h3 {
   color: #FFFFFF;
 }
-/* line 191, ../../src/sass/_general.scss */
+/* line 200, ../../src/sass/_general.scss */
 .post.new p {
   color: #FFFFFF;
 }
 
-/* line 195, ../../src/sass/_general.scss */
+/* line 204, ../../src/sass/_general.scss */
 .post-content {
   display: inline-block;
   vertical-align: middle;
@@ -414,14 +428,14 @@ body.js-offline::after {
   margin: 10px;
   text-align: left;
 }
-/* line 202, ../../src/sass/_general.scss */
+/* line 211, ../../src/sass/_general.scss */
 .post-content h3 {
   font-family: "OpenSansRegular";
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #5f6a7d;
 }
-/* line 209, ../../src/sass/_general.scss */
+/* line 218, ../../src/sass/_general.scss */
 .post-content p {
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -429,7 +443,7 @@ body.js-offline::after {
   line-height: 1.4rem;
 }
 
-/* line 217, ../../src/sass/_general.scss */
+/* line 226, ../../src/sass/_general.scss */
 .post-image {
   display: inline-block;
   vertical-align: middle;
@@ -437,7 +451,7 @@ body.js-offline::after {
   overflow: hidden;
   height: 202px;
 }
-/* line 224, ../../src/sass/_general.scss */
+/* line 233, ../../src/sass/_general.scss */
 .post-image img {
   -webkit-transition: transform 0.2s 0s ease-out;
   -moz-transition: transform 0.2s 0s ease-out;
@@ -445,7 +459,7 @@ body.js-offline::after {
   -o-transition: transform 0.2s 0s ease-out;
   transition: transform 0.2s 0s ease-out;
 }
-/* line 226, ../../src/sass/_general.scss */
+/* line 235, ../../src/sass/_general.scss */
 .post-image figcaption {
   width: 100%;
   padding: 20px 0;
@@ -463,11 +477,11 @@ body.js-offline::after {
   -o-transition: bottom 0.2s 0s ease-out;
   transition: bottom 0.2s 0s ease-out;
 }
-/* line 241, ../../src/sass/_general.scss */
+/* line 250, ../../src/sass/_general.scss */
 .post-image:hover figcaption {
   bottom: 0;
 }
-/* line 243, ../../src/sass/_general.scss */
+/* line 252, ../../src/sass/_general.scss */
 .post-image:hover img {
   -webkit-transform: translate3d(0, -40px, 0);
   -moz-transform: translate3d(0, -40px, 0);
@@ -479,12 +493,12 @@ body.js-offline::after {
   filter: url(#svg-blur);
 }
 
-/* line 252, ../../src/sass/_general.scss */
+/* line 261, ../../src/sass/_general.scss */
 #svg-filter {
   display: none;
 }
 
-/* line 260, ../../src/sass/_general.scss */
+/* line 269, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
   margin-bottom: 70px;
@@ -492,12 +506,12 @@ body.js-offline::after {
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 267, ../../src/sass/_general.scss */
+/* line 276, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 273, ../../src/sass/_general.scss */
+/* line 282, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }

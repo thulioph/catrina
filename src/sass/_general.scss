@@ -62,17 +62,12 @@ body {
 }
 
 .logo {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  font-family: $ff-project;
+  font-size: ($fs-extra-large)+2;
+  color: $bg-featured;
   text-align: center;
-
-  img {
-    width: 250px;
-    height: 250px;
-  }
-
-  span { text-indent: -9999px; }
+  height: 250px;
+  line-height: 320px;
 }
 
 .footer-primary {
@@ -88,9 +83,23 @@ body {
   text-align: center;
   border-bottom: 1px solid $border-primary;
   background-color: $bg-featured;
+
+  &.js-nav-active {
+    position: fixed;
+    top: -76px;
+    z-index: 901;
+  }
 }
 
-.nav-item { display: inline-block; }
+.nav-item {
+  display: inline-block;
+
+  &.js-nav-active {
+    background-color: $link-primary;
+
+    .nav-link { color: $bg-clean; }
+  }
+}
 
 .nav-link {
   display: block;
