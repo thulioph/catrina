@@ -71,7 +71,7 @@ $link-primary:               $blue-primary;
 
 // Text Truncate
 @mixin truncate {
-  white-space: nowrap;
+  white-space: pre-line;
   overflow: hidden;
   text-overflow: ellipsis;
 }

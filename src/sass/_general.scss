@@ -217,43 +217,6 @@ body {
   margin: 20px auto;
 }
 
-// slide
-.slide-primary {
-  overflow: hidden;
-  position: relative;
-}
-
-.slide-image {
-  display: inline-block;
-
-  &:focus {
-    outline: none;
-    border: none;
-  }
-
-  img { max-width: 100%; }
-}
-
-.slick-dots {
-  li {
-    display: inline-block;
-    margin: 5px;
-
-    &.slick-active { background-color: pink; }
-  }
-}
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  z-index: 910;
-}
-
-.slick-prev { left: 0; }
-
-.slick-next { right: 0; }
-// ===
 
 .link {
   text-decoration: none;
@@ -344,13 +307,178 @@ body {
 }
 // ===
 
+
+//
+// Social
+//
+
+.social {
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $border-primary;
+    display: inline-block;
+  }
+}
+
+.feeds {
+  width: 100%;
+  min-height: 280px;
+  display: block;
+  margin: 30px auto;
+
+  &.instagram {
+    border-top: 1px solid $border-primary;
+    border-bottom: 1px solid $border-primary;
+    background-color: $bg-featured;
+    padding: 30px 0;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+// instagram
+.feeds-instagram-item {
+  margin: 2px;
+  border: 1px solid $bg-primary;
+}
+
+.feeds-instagram-link {
+  text-decoration: none;
+
+  &:hover {
+    .feeds-instagram-like { height: 25%; }
+  }
+}
+
+.feeds-instagram-image {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.feeds-instagram-like {
+  position: absolute;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  line-height: 40px;
+  color: $bg-primary;
+  font-family: $ff-general;
+  font-size: $fs-small;
+  background-color: rgba(255, 255, 255, .7);
+  @include transition(height, .2s, 0s, linear);
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    @include path('heart.svg');
+    @include bdr(100%);
+  }
+}
+// ===
+
+// twitter
+.feeds-twitter-item {
+  width: 240px;
+  height: auto;
+  position: relative;
+  min-height: 130px;
+  background-color: $border-primary;
+  margin: 0 30px 100px 0;
+  @include transition(background, .2s, 0s, ease-out);
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 80%;
+    bottom: -15px;
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-right: 26px solid $border-primary;
+    border-bottom: 13px solid transparent;
+    @include rotate(10deg);
+  }
+
+  &:hover {
+    background-color: $text-primary;
+
+    &::before { border-right: 26px solid $text-primary; }
+
+    .tweet a { color: $bg-featured; }
+
+    p { color: $bg-featured; }
+  }
+
+  .user {
+    position: absolute;
+    bottom: -70px;
+    left: 53px;
+
+    img {
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      @include bdr(100%);
+    }
+
+    a {
+      text-decoration: none;
+      color: $link-primary;
+    }
+
+    span {
+      display: none;
+
+      &[data-scribe="element:screen_name"] {
+        font-size: ($fs-extra-small)-.4;
+        font-family: $ff-general;
+        vertical-align: top;
+        line-height: 50px;
+        margin-left: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  p {
+    font-size: ($fs-extra-small)-.4;
+    line-height: $fs-small;
+    font-family: $ff-general;
+    color: $bg-primary;
+    @include truncate();
+
+    &.tweet {
+      padding: 20px;
+
+      a { color: $link-primary; }
+    }
+  }
+}
+// ===
+
+
 //
 // Contact
 //
 
 .contact {
   padding: 70px 0;
-  margin-bottom: 70px;
   border-top: 1px solid $border-primary;
   border-bottom: 1px solid $border-primary;
   background-color: $bg-featured;

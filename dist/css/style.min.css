@@ -436,54 +436,6 @@ body.js-offline::after {
 }
 
 /* line 221, ../../src/sass/_general.scss */
-.slide-primary {
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 226, ../../src/sass/_general.scss */
-.slide-image {
-  display: inline-block;
-}
-/* line 229, ../../src/sass/_general.scss */
-.slide-image:focus {
-  outline: none;
-  border: none;
-}
-/* line 234, ../../src/sass/_general.scss */
-.slide-image img {
-  max-width: 100%;
-}
-
-/* line 238, ../../src/sass/_general.scss */
-.slick-dots li {
-  display: inline-block;
-  margin: 5px;
-}
-/* line 242, ../../src/sass/_general.scss */
-.slick-dots li.slick-active {
-  background-color: pink;
-}
-
-/* line 246, ../../src/sass/_general.scss */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  z-index: 910;
-}
-
-/* line 253, ../../src/sass/_general.scss */
-.slick-prev {
-  left: 0;
-}
-
-/* line 255, ../../src/sass/_general.scss */
-.slick-next {
-  right: 0;
-}
-
-/* line 258, ../../src/sass/_general.scss */
 .link {
   text-decoration: none;
   font-size: 1rem;
@@ -491,26 +443,26 @@ body.js-offline::after {
   font-family: "OpenSansRegular";
 }
 
-/* line 266, ../../src/sass/_general.scss */
+/* line 229, ../../src/sass/_general.scss */
 .post {
   background-color: #E0E0E0;
   margin-top: 30px;
   padding: 20px 0;
 }
-/* line 271, ../../src/sass/_general.scss */
+/* line 234, ../../src/sass/_general.scss */
 .post.new {
   background-color: #2586b7;
 }
-/* line 274, ../../src/sass/_general.scss */
+/* line 237, ../../src/sass/_general.scss */
 .post.new h3 {
   color: #FFFFFF;
 }
-/* line 275, ../../src/sass/_general.scss */
+/* line 238, ../../src/sass/_general.scss */
 .post.new p {
   color: #FFFFFF;
 }
 
-/* line 279, ../../src/sass/_general.scss */
+/* line 242, ../../src/sass/_general.scss */
 .post-content {
   display: inline-block;
   vertical-align: middle;
@@ -518,14 +470,14 @@ body.js-offline::after {
   margin: 10px;
   text-align: left;
 }
-/* line 286, ../../src/sass/_general.scss */
+/* line 249, ../../src/sass/_general.scss */
 .post-content h3 {
   font-family: "OpenSansRegular";
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #5f6a7d;
 }
-/* line 293, ../../src/sass/_general.scss */
+/* line 256, ../../src/sass/_general.scss */
 .post-content p {
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -533,7 +485,7 @@ body.js-offline::after {
   line-height: 1.4rem;
 }
 
-/* line 301, ../../src/sass/_general.scss */
+/* line 264, ../../src/sass/_general.scss */
 .post-image {
   display: inline-block;
   vertical-align: middle;
@@ -541,7 +493,7 @@ body.js-offline::after {
   overflow: hidden;
   height: 202px;
 }
-/* line 308, ../../src/sass/_general.scss */
+/* line 271, ../../src/sass/_general.scss */
 .post-image img {
   -webkit-transition: transform 0.2s 0s ease-out;
   -moz-transition: transform 0.2s 0s ease-out;
@@ -549,7 +501,7 @@ body.js-offline::after {
   -o-transition: transform 0.2s 0s ease-out;
   transition: transform 0.2s 0s ease-out;
 }
-/* line 310, ../../src/sass/_general.scss */
+/* line 273, ../../src/sass/_general.scss */
 .post-image figcaption {
   width: 100%;
   padding: 20px 0;
@@ -567,11 +519,11 @@ body.js-offline::after {
   -o-transition: bottom 0.2s 0s ease-out;
   transition: bottom 0.2s 0s ease-out;
 }
-/* line 325, ../../src/sass/_general.scss */
+/* line 288, ../../src/sass/_general.scss */
 .post-image:hover figcaption {
   bottom: 0;
 }
-/* line 327, ../../src/sass/_general.scss */
+/* line 290, ../../src/sass/_general.scss */
 .post-image:hover img {
   -webkit-transform: translate3d(0, -40px, 0);
   -moz-transform: translate3d(0, -40px, 0);
@@ -583,36 +535,276 @@ body.js-offline::after {
   filter: url(#svg-blur);
 }
 
-/* line 336, ../../src/sass/_general.scss */
+/* line 299, ../../src/sass/_general.scss */
 #svg-filter {
   display: none;
 }
 
-/* line 340, ../../src/sass/_general.scss */
+/* line 303, ../../src/sass/_general.scss */
 .content-modal {
   display: none;
 }
-/* line 343, ../../src/sass/_general.scss */
+/* line 306, ../../src/sass/_general.scss */
 .content-modal p {
   width: 100%;
 }
 
+/* line 315, ../../src/sass/_general.scss */
+.social {
+  text-align: center;
+}
+/* line 318, ../../src/sass/_general.scss */
+.social h2 {
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E0E0E0;
+  display: inline-block;
+}
+
+/* line 326, ../../src/sass/_general.scss */
+.feeds {
+  width: 100%;
+  min-height: 280px;
+  display: block;
+  margin: 30px auto;
+}
+/* line 332, ../../src/sass/_general.scss */
+.feeds.instagram {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #FAFAFA;
+  padding: 30px 0;
+}
+/* line 339, ../../src/sass/_general.scss */
+.feeds li {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 346, ../../src/sass/_general.scss */
+.feeds-instagram-item {
+  margin: 2px;
+  border: 1px solid #1B2126;
+}
+
 /* line 351, ../../src/sass/_general.scss */
+.feeds-instagram-link {
+  text-decoration: none;
+}
+/* line 355, ../../src/sass/_general.scss */
+.feeds-instagram-link:hover .feeds-instagram-like {
+  height: 25%;
+}
+
+/* line 359, ../../src/sass/_general.scss */
+.feeds-instagram-image {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+/* line 366, ../../src/sass/_general.scss */
+.feeds-instagram-like {
+  position: absolute;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  line-height: 40px;
+  color: #1B2126;
+  font-family: "OpenSansRegular";
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: height 0.2s 0s linear;
+  -moz-transition: height 0.2s 0s linear;
+  -ms-transition: height 0.2s 0s linear;
+  -o-transition: height 0.2s 0s linear;
+  transition: height 0.2s 0s linear;
+}
+/* line 380, ../../src/sass/_general.scss */
+.feeds-instagram-like::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-image: url("../../src/images/heart.svg");
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 396, ../../src/sass/_general.scss */
+.feeds-twitter-item {
+  width: 240px;
+  height: auto;
+  position: relative;
+  min-height: 130px;
+  background-color: #E0E0E0;
+  margin: 0 30px 100px 0;
+  -webkit-transition: background 0.2s 0s ease-out;
+  -moz-transition: background 0.2s 0s ease-out;
+  -ms-transition: background 0.2s 0s ease-out;
+  -o-transition: background 0.2s 0s ease-out;
+  transition: background 0.2s 0s ease-out;
+}
+/* line 405, ../../src/sass/_general.scss */
+.feeds-twitter-item::before {
+  content: '';
+  position: absolute;
+  right: 80%;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-right: 26px solid #E0E0E0;
+  border-bottom: 13px solid transparent;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+/* line 418, ../../src/sass/_general.scss */
+.feeds-twitter-item:hover {
+  background-color: #5f6a7d;
+}
+/* line 421, ../../src/sass/_general.scss */
+.feeds-twitter-item:hover::before {
+  border-right: 26px solid #5f6a7d;
+}
+/* line 423, ../../src/sass/_general.scss */
+.feeds-twitter-item:hover .tweet a {
+  color: #FAFAFA;
+}
+/* line 425, ../../src/sass/_general.scss */
+.feeds-twitter-item:hover p {
+  color: #FAFAFA;
+}
+/* line 428, ../../src/sass/_general.scss */
+.feeds-twitter-item .user {
+  position: absolute;
+  bottom: -70px;
+  left: 53px;
+}
+/* line 433, ../../src/sass/_general.scss */
+.feeds-twitter-item .user img {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 440, ../../src/sass/_general.scss */
+.feeds-twitter-item .user a {
+  text-decoration: none;
+  color: #2586b7;
+}
+/* line 445, ../../src/sass/_general.scss */
+.feeds-twitter-item .user span {
+  display: none;
+}
+/* line 448, ../../src/sass/_general.scss */
+.feeds-twitter-item .user span[data-scribe="element:screen_name"] {
+  font-size: 0.8rem;
+  font-family: "OpenSansRegular";
+  vertical-align: top;
+  line-height: 50px;
+  margin-left: 10px;
+  display: inline-block;
+}
+/* line 459, ../../src/sass/_general.scss */
+.feeds-twitter-item p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-family: "OpenSansRegular";
+  color: #1B2126;
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 466, ../../src/sass/_general.scss */
+.feeds-twitter-item p.tweet {
+  padding: 20px;
+}
+/* line 469, ../../src/sass/_general.scss */
+.feeds-twitter-item p.tweet a {
+  color: #2586b7;
+}
+
+/* line 480, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
-  margin-bottom: 70px;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 358, ../../src/sass/_general.scss */
+/* line 486, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 364, ../../src/sass/_general.scss */
+/* line 492, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
+}
+
+/* line 5, ../../src/sass/libs/_slick.scss */
+.slide-primary {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 10, ../../src/sass/libs/_slick.scss */
+.slide-image {
+  display: inline-block;
+}
+/* line 13, ../../src/sass/libs/_slick.scss */
+.slide-image:focus {
+  outline: none;
+  border: none;
+}
+/* line 18, ../../src/sass/libs/_slick.scss */
+.slide-image img {
+  max-width: 100%;
+}
+
+/* line 22, ../../src/sass/libs/_slick.scss */
+.slick-dots li {
+  display: inline-block;
+  margin: 5px;
+}
+/* line 26, ../../src/sass/libs/_slick.scss */
+.slick-dots li.slick-active {
+  background-color: black;
+}
+
+/* line 30, ../../src/sass/libs/_slick.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 910;
+}
+
+/* line 37, ../../src/sass/libs/_slick.scss */
+.slick-prev {
+  left: 0;
+}
+
+/* line 39, ../../src/sass/libs/_slick.scss */
+.slick-next {
+  right: 0;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
