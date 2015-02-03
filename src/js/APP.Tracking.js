@@ -18,6 +18,10 @@ APP.Tracking = {
       ga('send', 'event', 'header', 'Nav', 'About');
     });
 
+    $("[data-track='nav-social']").on('click', function(event) {
+      ga('send', 'event', 'header', 'Nav', 'Social');
+    });
+
     $("[data-track='nav-contact']").on('click', function(event) {
       ga('send', 'event', 'header', 'Nav', 'Contact');
     });
