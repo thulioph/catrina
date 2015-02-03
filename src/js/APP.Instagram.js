@@ -2,6 +2,7 @@ var APP = APP || {};
 APP.Instagram = {
   setUp: function() {
     this.setConfig();
+    this.handlebarsModal();
   },
 
   setConfig: function() {
@@ -33,7 +34,7 @@ APP.Instagram = {
         if (data.data.length === 0) {
           alert('Não existem imagens!');
         } else {
-          that.createStructure(data, limit, size);
+          that.template(data, limit, size);
         }
       },
 
@@ -43,48 +44,44 @@ APP.Instagram = {
     });
   },
 
-  createStructure: function(data, limit, size) {
-      var list, li, figure, img, imgUrl, href, text, likes, figcaption;
+  handlebarsModal: function() {
+    var source, template, data, output;
 
-        list = document.querySelector('#feeds-instagram ul');
+    source = document.getElementById('modal-template').innerHTML;
+    template = Handlebars.compile(source);
 
-        for (var i = 0; i < limit; i++) {
-            imgUrl = data.data[i].images.thumbnail.url;
-            href = data.data[i].link;
-            text = data.data[i].caption.text;
-            likes = data.data[i].likes.count;
+    data = {
+      title: 'Título usando Handlebars',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptatibus totam modi ullam est commodi debitis optio officiis ad, voluptates illum pariatur iure doloremque, nemo harum? Ipsa optio, saepe quo modi earum laudantium. Saepe, nesciunt. Alias voluptatum ipsam dolorum, error!'
+    };
 
-          // create elements
-          li = document.createElement('li');
+    output = template(data);
 
-          figure = document.createElement('figure');
-          img = document.createElement('img');
-          figcaption = document.createElement('figcaption');
+    document.getElementById('modal').innerHTML = output;
+  },
 
-          a = document.createElement('a');
+  template: function(data, limit, size) {
+    var source, template, output, dados, photos;
 
-          // adds classes and attributes
-          li.classList.add('feeds-instagram-item');
+    source = document.getElementById('instagram-template').innerHTML;
+    template = Handlebars.compile(source);
+    photos = [];
 
-          figure.classList.add('feeds-instagram-image');
-          figcaption.classList.add('feeds-instagram-like');
+    for (var i = 0; i < limit; i++) {
+      var href = data.data[i].link,
+          imgUrl = data.data[i].images.thumbnail.url,
+          likes = data.data[i].likes.count,
+          text = data.data[i].caption.text;
 
-          a.classList.add('feeds-instagram-link');
+      photos.push({
+        href: href,
+        imgUrl: imgUrl,
+        likes: likes,
+        text: text
+      });
 
-          // adds content
-          a.setAttribute('href', href);
-          a.setAttribute('title', text);
-          a.setAttribute('target', '_blank');
-
-          img.setAttribute('src', imgUrl);
-          figcaption.innerHTML = likes;
-
-          // append
-          figure.appendChild(img);
-          figure.appendChild(figcaption);
-          a.appendChild(figure);
-          li.appendChild(a);
-          list.appendChild(li);
-        }
+      output = template({photos:photos});
+      document.getElementById('feeds-instagram').innerHTML = output;
+    }
   }
 }

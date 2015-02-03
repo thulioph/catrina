@@ -177,9 +177,7 @@
     <section id="social" class="section social">
       <h2 class="section-title">Feeds Instagram</h2>
       <p class="section-description">Last photos with #catrina hashtag</p>
-      <aside id="feeds-instagram" class="feeds instagram">
-        <ul class="feeds-instagram-list"></ul>
-      </aside>
+      <aside id="feeds-instagram" class="feeds instagram"></aside>
 
 
       <h2 class="section-title">Feeds Twitter</h2>
@@ -222,10 +220,6 @@
 
   <!-- Modal -->
   <div id="modal" class="content-modal">
-    <h2 class="section-title">Aqui vem o título do meu modal</h2>
-    <p class="section-description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptatibus totam modi ullam est commodi debitis optio officiis ad, voluptates illum pariatur iure doloremque, nemo harum? Ipsa optio, saepe quo modi earum laudantium. Saepe, nesciunt. Alias voluptatum ipsam dolorum, error!
-    </p>
   </div>
 
   <!-- SVG Blur Filter -->
@@ -234,6 +228,27 @@
       <feGaussianBlur in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
     </filter>
   </svg>
+
+  <!-- Templates -->
+  <script id="modal-template" type="text/x-handlebars-template">
+    <h2 class="section-title">{{title}}</h2>
+    <p class="section-description">{{description}}</p>
+  </script>
+
+  <script id="instagram-template" type="text/x-handlebars-template">
+    <ul class="feeds-instagram-list">
+      {{#each photos}}
+        <li class="feeds-instagram-item">
+          <a href="{{href}}" title="{{text}}" target="_blank" class="feeds-instagram-link">
+            <figure class="feeds-instagram-image">
+              <img src="{{imgUrl}}" alt="">
+              <figcaption class="feeds-instagram-like">{{likes}}</figcaption>
+            </figure>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </script>
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
