@@ -7,7 +7,6 @@ body {
   background-color: transparent;
 
   &.js-offline {
-    overflow: hidden;
 
     &::after {
       content: attr(data-status);
@@ -17,7 +16,7 @@ body {
       top: 0;
       left: 0;
       text-align: center;
-      // color: $color-other;
+      color: $bg-featured;
       font-size: $fs-small;
       line-height: $fs-small;
       font-family: $ff-primary;
@@ -337,6 +336,13 @@ body {
 #svg-filter { display: none; }
 // ===
 
+// Modal
+.content-modal {
+  display: none;
+
+  p { width: 100%; }
+}
+// ===
 
 //
 // Contact

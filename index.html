@@ -95,6 +95,10 @@
       <h2 class="section-title">Aqui vem um título para sua sessão</h2>
       <p class="section-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae amet error eligendi ab, consequatur delectus molestias minus aliquid vel sequi facilis, itaque a veritatis molestiae doloremque hic incidunt pariatur sit, voluptatem unde non totam! Ducimus autem mollitia nulla voluptatibus.
+
+        <br><br>
+
+        <a href="#modal" class="link modal">Aqui vem um link pro modal.</a>
       </p>
 
       <div id="slide" class="slide-primary">
@@ -132,19 +136,23 @@
           </p>
         </div>
 
-        <figure class="post-image">
-          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 1!">
+          <figure class="post-image">
+            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
 
-          <figcaption>Legenda da imagem</figcaption>
-        </figure>
+            <figcaption>Legenda da imagem</figcaption>
+          </figure>
+        </a>
       </article>
 
       <article class="post">
-        <figure class="post-image">
-          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 2!">
+          <figure class="post-image">
+            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
 
-          <figcaption>Legenda da imagem</figcaption>
-        </figure>
+            <figcaption>Legenda da imagem</figcaption>
+          </figure>
+        </a>
 
         <div class="post-content">
           <h3>Título do meu post</h3>
@@ -186,6 +194,14 @@
     <p>Copyright © 2015. Made with beer and love.</p>
   </footer>
 
+  <!-- Modal -->
+  <div id="modal" class="content-modal">
+    <h2 class="section-title">Aqui vem o título do meu modal</h2>
+    <p class="section-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptatibus totam modi ullam est commodi debitis optio officiis ad, voluptates illum pariatur iure doloremque, nemo harum? Ipsa optio, saepe quo modi earum laudantium. Saepe, nesciunt. Alias voluptatum ipsam dolorum, error!
+    </p>
+  </div>
+
   <!-- SVG Blur Filter -->
   <svg id="svg-filter">
     <filter id="svg-blur">
@@ -195,19 +211,19 @@
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
-  <script src="dist/js/scripts.min.js"></script>
+  <!-- <script src="dist/js/scripts.min.js"></script> -->
 
-  <!--
   <script src="src/js/APP.js"></script>
   <script src="src/js/APP.Status.js"></script>
   <script src="src/js/APP.Language.js"></script>
   <script src="src/js/APP.Tracking.js"></script>
   <script src="src/js/APP.Scroll.js"></script>
-  <script src="src/js/APP.SLide.js"></script>
+  <script src="src/js/APP.Slide.js"></script>
   <script src="src/js/APP.Request.js"></script>
   <script src="src/js/APP.Storage.js"></script>
   <script src="src/js/APP.Contact.js"></script>
-   -->
+  <script src="src/js/APP.Modal.js"></script>
+
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
