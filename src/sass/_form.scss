@@ -2,60 +2,59 @@
 //     Forms
 // —————————————————————————
 
-::-webkit-input-placeholder {
-   color: gray;
+::-webkit-input-placeholder { color: $gray-primary; }
+
+:-moz-placeholder { color: $gray-primary; }
+
+::-moz-placeholder { color: $gray-primary; }
+
+:-ms-input-placeholder { color: $gray-primary; }
+
+%input-state {
+  outline: none;
+  border: 1px solid $link-primary;
 }
 
-:-moz-placeholder {
-  color: gray;
+textarea {
+  resize: vertical;
+  min-height: 65px;
 }
 
-::-moz-placeholder {
-  color: gray;
-}
-
-:-ms-input-placeholder {
-  color: gray;
-}
-
-select {
-  &:focus {
-    border: none;
-    @extend input:focus;
-  }
-}
-
-input {
+input,
+textarea {
   font-family: $ff-primary;
+  @include transition(border, .2s, 0s, linear);
 
-  &:focus {
-    outline: none;
-    // @include bsd(1px, 2px, 3px, $color-secondary);
-  }
+  &:active { @extend %input-state; }
+  &:focus { @extend %input-state; }
 }
 
 .btn-primary {
   text-transform: uppercase;
-  // color: $color-secondary;
-  // background-color: $color-primary;
-  border-radius: 3px;
-  padding: 15px 20px;
+  padding: 5px 20px;
   text-align: center;
   border: none;
   margin: 0 auto;
+  color: $bg-clean;
+  background-color: $link-primary;
+  font-size: ($fs-extra-small)-.2;
+  font-family: $ff-primary;
   display: block;
+  @include bdr(4px);
   cursor: pointer;
-  font-size: $fs-extra-small;
-  @include apr(none);
+  @include transition(background, .2s, 0s, ease);
+
+  &:hover { background-color: $title-primary; }
 }
 
 .input-primary {
   height: 40px;
   padding: 5px 10px;
-  margin: 0 auto 10px auto;
+  margin-bottom: 10px;
   outline: none;
-  display: block;
-  @include bdr(2px);
+  border: 1px solid $border-primary;
+  font-size: ($fs-extra-small)-.2;
+  @include bdr(5px);
 
   &.small { width: 30%; }
   &.medium { width: 50%; }

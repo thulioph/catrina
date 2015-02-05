@@ -1,6 +1,7 @@
 ![Logo](logo-bg.png "Catrina")
 
 ## Olá, seja bem-vindo ao CATRINA!
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Como usa-lo?
 

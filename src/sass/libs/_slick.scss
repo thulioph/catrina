@@ -1,0 +1,40 @@
+//
+// Slide
+//
+
+.slide-primary {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-image {
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  img { max-width: 100%; }
+}
+
+.slick-dots {
+  li {
+    display: inline-block;
+    margin: 5px;
+
+    &.slick-active { background-color: black; }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 910;
+}
+
+.slick-prev { left: 0; }
+
+.slick-next { right: 0; }
+// ===
