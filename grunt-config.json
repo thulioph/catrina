@@ -60,6 +60,9 @@
           ,"src/js/APP.Request.js"
           ,"src/js/APP.Storage.js"
           ,"src/js/APP.Contact.js"
+          ,"src/js/APP.Modal.js"
+          ,"src/js/APP.Twitter.js"
+          ,"src/js/APP.Instagram.js"
         ],
 
         "dist/js/libs.min.js": [
@@ -69,6 +72,8 @@
           ,"bower_components/slick-carousel/slick/slick.min.js"
           ,"bower_components/hammerjs/hammer.min.js"
           ,"bower_components/handlebars/handlebars.js"
+          ,"bower_components/fancybox/source/jquery.fancybox.pack.js"
+          ,"src/js/libs/twitterFetcher.js"
         ]
       }
     }

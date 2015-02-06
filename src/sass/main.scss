@@ -9,7 +9,6 @@
 // General styles
 @import '_general';
 
-// Sections
-@import '_home';
-@import '_about';
-@import '_contact';
+// Libs
+@import 'libs/_slick';
+@import 'libs/_fancybox';

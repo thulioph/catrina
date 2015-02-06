@@ -7,6 +7,8 @@ APP.Scroll = {
   setUp: function(){
     this.getClick();
     this.getPosition();
+    this.showBackTop();
+    this.backTop();
   },
 
   getClick: function() {
@@ -40,6 +42,29 @@ APP.Scroll = {
       } else if ($(document).scrollTop() <= 405) {
         $('#nav-primary').removeClass('js-nav-active');
       }
+    });
+  },
+
+  showBackTop: function() {
+    $(window).on('scroll', function() {
+      if ($(document).scrollTop() >= 1885) {
+        $('#back-top').addClass('js-show');
+      } else {
+        $('#back-top').removeClass('js-show');
+      }
+    });
+  },
+
+  backTop: function() {
+    var that, target;
+
+    that = this;
+
+    $('#back-top').on('click', function(event) {
+      event.preventDefault();
+      target = $( $(this).attr('href') );
+
+      that.smoothScroll(target, 0);
     });
   }
 }

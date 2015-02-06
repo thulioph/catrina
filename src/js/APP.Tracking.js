@@ -9,16 +9,21 @@ APP.Tracking = {
   },
 
   initTracking: function() {
-    $('.nav-home').on('click', function(event) {
-      ga('send', 'event', 'header', 'Menu', 'Home');
+    $("[data-track='nav-home']").on('click', function(event) {
+      // 'send', 'event', 'element position', 'label', 'element that click'
+      ga('send', 'event', 'header', 'Nav', 'Home');
     });
 
-    $('.nav-about').on('click', function(event) {
-      ga('send', 'event', 'header', 'Menu', 'Sobre');
+    $("[data-track='nav-about']").on('click', function(event) {
+      ga('send', 'event', 'header', 'Nav', 'About');
     });
 
-    $('.nav-contact').on('click', function(event) {
-      ga('send', 'event', 'header', 'Menu', 'Contato');
+    $("[data-track='nav-social']").on('click', function(event) {
+      ga('send', 'event', 'header', 'Nav', 'Social');
+    });
+
+    $("[data-track='nav-contact']").on('click', function(event) {
+      ga('send', 'event', 'header', 'Nav', 'Contact');
     });
   }
 };

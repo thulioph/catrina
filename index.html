@@ -63,31 +63,39 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="dist/css/style.min.css">
+
+  <!-- Scripts -->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+    _gaq.push(['_trackPageview']);
+  </script>
 </head>
 
 <body>
+  <a id="fork-github" class="fork-github" href="https://github.com/thulioph/catrina" target="_blank">
+    <img src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
+  </a>
 
   <header class="header-primary">
-    <h1 class="logo">
-      <figure>
-        <img src="src/images/logo.png" alt="Logo Catrina">
-      </figure>
+    <h1 class="logo"> Catrina </h1>
 
-      <span>Catrina</span>
-    </h1>
-
-    <nav class="nav-primary">
+    <nav id="nav-primary" class="nav-primary">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#home" class="nav-link" title="Home">Home</a>
+          <a href="#home" class="nav-link" data-track="nav-home" title="Home">Home</a>
         </li>
 
         <li class="nav-item">
-          <a href="#about" class="nav-link" title="About">About</a>
+          <a href="#about" class="nav-link" data-track="nav-about" title="About">About</a>
         </li>
 
         <li class="nav-item">
-          <a href="#contact" class="nav-link" title="Contact">Contact</a>
+          <a href="#social" class="nav-link" data-track="nav-social" title="Social">Social</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-track="nav-contact" title="Contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -98,6 +106,10 @@
       <h2 class="section-title">Aqui vem um título para sua sessão</h2>
       <p class="section-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae amet error eligendi ab, consequatur delectus molestias minus aliquid vel sequi facilis, itaque a veritatis molestiae doloremque hic incidunt pariatur sit, voluptatem unde non totam! Ducimus autem mollitia nulla voluptatibus.
+
+        <br><br>
+
+        <a href="#modal" class="link modal">Aqui vem um link pro modal.</a>
       </p>
 
       <div id="slide" class="slide-primary">
@@ -135,19 +147,23 @@
           </p>
         </div>
 
-        <figure class="post-image">
-          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 1!">
+          <figure class="post-image">
+            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
 
-          <figcaption>Legenda da imagem</figcaption>
-        </figure>
+            <figcaption>Legenda da imagem</figcaption>
+          </figure>
+        </a>
       </article>
 
       <article class="post">
-        <figure class="post-image">
-          <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 2!">
+          <figure class="post-image">
+            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
 
-          <figcaption>Legenda da imagem</figcaption>
-        </figure>
+            <figcaption>Legenda da imagem</figcaption>
+          </figure>
+        </a>
 
         <div class="post-content">
           <h3>Título do meu post</h3>
@@ -156,6 +172,19 @@
           </p>
         </div>
       </article>
+    </section>
+
+    <section id="social" class="section social">
+      <h2 class="section-title">Feeds Instagram</h2>
+      <p class="section-description">Last photos with #catrina hashtag</p>
+      <aside id="feeds-instagram" class="feeds instagram"></aside>
+
+
+      <h2 class="section-title">Feeds Twitter</h2>
+      <p class="section-description">Last tweets with #opensource hashtag</p>
+      <aside id="feeds-twitter" class="feeds twitter">
+        <ul class="feeds-twitter-list"></ul>
+      </aside>
     </section>
 
     <section id="contact" class="section contact">
@@ -176,7 +205,22 @@
   </main>
 
   <footer class="footer-primary">
+    <a href="#fork-github" id="back-top" class="back-top">Top</a>
+
+    <aside class="social-share">
+      <ul class="social-list">
+        <li class="social-item"><a target="_blank" href="http://www.facebook.com" class="social-link">Facebook</a></li>
+        <li class="social-item"><a target="_blank" href="http://www.twitter.com" class="social-link">Twiiter</a></li>
+        <li class="social-item"><a target="_blank" href="http://www.github.com" class="social-link">Github</a></li>
+      </ul>
+    </aside>
+
+    <p>Copyright © 2015. Made with beer and love.</p>
   </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="content-modal">
+  </div>
 
   <!-- SVG Blur Filter -->
   <svg id="svg-filter">
@@ -184,6 +228,27 @@
       <feGaussianBlur in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
     </filter>
   </svg>
+
+  <!-- Templates -->
+  <script id="modal-template" type="text/x-handlebars-template">
+    <h2 class="section-title">{{title}}</h2>
+    <p class="section-description">{{description}}</p>
+  </script>
+
+  <script id="instagram-template" type="text/x-handlebars-template">
+    <ul class="feeds-instagram-list">
+      {{#each photos}}
+        <li class="feeds-instagram-item">
+          <a href="{{href}}" title="{{text}}" target="_blank" class="feeds-instagram-link">
+            <figure class="feeds-instagram-image">
+              <img src="{{imgUrl}}" alt="">
+              <figcaption class="feeds-instagram-like">{{likes}}</figcaption>
+            </figure>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </script>
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
@@ -195,21 +260,34 @@
   <script src="src/js/APP.Language.js"></script>
   <script src="src/js/APP.Tracking.js"></script>
   <script src="src/js/APP.Scroll.js"></script>
-  <script src="src/js/APP.SLide.js"></script>
+  <script src="src/js/APP.Slide.js"></script>
   <script src="src/js/APP.Request.js"></script>
   <script src="src/js/APP.Storage.js"></script>
   <script src="src/js/APP.Contact.js"></script>
+  <script src="src/js/APP.Modal.js"></script>
+  <script src="src/js/APP.Twitter.js"></script>
+  <script src="src/js/APP.Instagram.js"></script>
    -->
+
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
+    // Tracking events
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+
+    // Analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'ID', 'auto');
+    ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
 </body>
