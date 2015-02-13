@@ -1,7 +1,7 @@
 /**
  * APP Modules Initilizer
  * Author: Dennis Calazans
- * 
+ *
  */
 var APP = APP || {};
 
@@ -14,10 +14,10 @@ APP._nameSpace = "APP";
 /**
  * Method delegation
  *
- * Using this method, 
- * you can create an anonymous function able to invoke a method 
+ * Using this method,
+ * you can create an anonymous function able to invoke a method
  * inside an determined scope
- * 
+ *
  * @param  {Object} scope  Scope Object
  * @param  {function} method The method that will be invoked
  * @return {function}        Delegated method
@@ -33,10 +33,10 @@ APP.delegate = function(scope, method) {
 		}
 
 		return function() {
-			method.apply(scope, methodArguments)
+			method.apply(scope, methodArguments);
 		}
 	} else {
-		return function() { 
+		return function() {
 			method.apply(scope,arguments);
 		};
 	}
@@ -44,7 +44,7 @@ APP.delegate = function(scope, method) {
 
 /**
  * Initialize all (arguments.length == 0) or several modules under APP
- * @param  object [Module,[...]] 
+ * @param  object [Module,[...]]
  * @return void
  */
 APP.init = function(Module) {
@@ -72,24 +72,24 @@ APP.readModule = function(Module) {
 	if(arguments.length > 1) {
 		for(;i<arguments.length;i++) {
 			APP.readModule(arguments[i]);
-		} 
+		}
 		return;
 	}
 
 	if(typeof Module != "object") return false;
-	
+
 	if(Module.hasOwnProperty('setUp') && typeof Module.setUp == "function") {
 		Module.setUp();
 	} else {
 		return false;
 	}
-	
+
 	for(node in Module) {
-		
+
 
 		if(Module.hasOwnProperty(node) === true) {
 			if(Module[node] !== null && typeof Module[node] == "object") {
-				
+
 				//Auxiliar function to recover parent Module
 				Module[node]['parent'] = function() {
 					return Module;
@@ -97,12 +97,12 @@ APP.readModule = function(Module) {
 
 				//Mudule nameSpace definition
 				Module[node]['_nameSpace'] = (Module['_nameSpace'] || "APP") + '.'+node;
-				
+
 				APP.readModule(Module[node]);
 			}
 		}
 	}
-	
+
 	return false;
 };
 
@@ -121,7 +121,7 @@ APP.initModuleByNamespace = function(namespace) {
 	}
 
 	APP.init.apply(this, argumentsArray);
-}
+};
 
 /**
  * Return an object by a given namespace
@@ -134,7 +134,7 @@ APP.getByNamespace = function(namespace) {
 		spaces = namespace.split(".");
 
 		if(spaces.shift() != "APP") return null;
-		
+
 		spacesLength = spaces.length;
 
 		target = this;
@@ -148,7 +148,7 @@ APP.getByNamespace = function(namespace) {
 	}
 
 	return target;
-}
+};
 
 /**
  * Invoke a method by it's namespace
@@ -183,4 +183,4 @@ APP.applyByNamespace = function(nameSpace, params) {
 		}
 
 		else { return target; }
-}
+};
