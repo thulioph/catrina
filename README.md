@@ -14,15 +14,17 @@ Não se importe com a [página de apresentação](http://thulioph.github.io/catr
 
 ```
 npm install
-``` 
-
-e 
+```
 
 ```
 bower install
 ```
 
-Basicamente você vai trabalhar com dois "ambientes" *src* e *dist*.
+```
+http-server
+```
+
+O servidor irá rodar em: `http://localhost:8080` e basicamente você vai trabalhar com dois "ambientes" *src* e *dist*.
 
 #### src
 Nesta pasta contém os arquivos originais, imagens originais, arquivos comentados, libs, etc..
