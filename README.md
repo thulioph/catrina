@@ -80,6 +80,7 @@ Todas as dependências, técnicas e estilos usados no projeto, você encontra na
 - [Local Storage](http://diveintohtml5.com.br/storage.html)
 - [APPCache](http://www.html5rocks.com/pt/tutorials/appcache/beginner/)
 - [Eventos online e offline](https://developer.mozilla.org/pt-BR/docs/Online_and_offline_events)
+- [Cheet.js](http://namuol.github.io/cheet.js/)
 
 
 > O projeto se encontra em evolução, então antes de reportar algum problema por favor verifique as [issues](https://github.com/thulioph/catrina/issues) e veja se alguém já está fazendo o que você pensou, se está tendo ou teve o mesmo problema que o seu, ou se está colaborando em alguma coisa que você queria. :cop:
