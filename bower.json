@@ -16,6 +16,7 @@
     "fancybox": "~2.1.5"
   },
   "devDependencies": {
-    "i18next": "~1.7.3"
+    "i18next": "~1.7.3",
+    "cheet.js": "~0.3.3"
   }
 }
