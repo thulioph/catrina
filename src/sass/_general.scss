@@ -40,6 +40,23 @@ body {
   text-shadow: none;
 }
 
+//
+// Components
+//
+progress {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background-color: transparent;
+  @include apr(none);
+  @include transition(all, .2s, 0s, linear);
+  @include bsd-multiples(0 1px 11px rgba(0,0,0,0.7));
+  @include progressBar($blue-primary);
+}
 
 //
 // Structure
@@ -216,7 +233,6 @@ body {
   width: 50%;
   margin: 20px auto;
 }
-
 
 .link {
   text-decoration: none;

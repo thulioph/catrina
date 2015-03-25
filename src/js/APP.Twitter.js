@@ -23,6 +23,9 @@ APP.Twitter = {
         var tweet = tweets[i];
         that.createStructure(tweet);
       }
+
+      // start progressBar
+      APP.Scroll.progressBar();
     }
 
     twitterFetcher.fetch(tweets);

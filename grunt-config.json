@@ -55,14 +55,14 @@
           ,"src/js/APP.Status.js"
           ,"src/js/APP.Language.js"
           ,"src/js/APP.Tracking.js"
+          ,"src/js/APP.Twitter.js"
+          ,"src/js/APP.Instagram.js"
           ,"src/js/APP.Scroll.js"
           ,"src/js/APP.Slide.js"
           ,"src/js/APP.Request.js"
           ,"src/js/APP.Storage.js"
           ,"src/js/APP.Contact.js"
           ,"src/js/APP.Modal.js"
-          ,"src/js/APP.Twitter.js"
-          ,"src/js/APP.Instagram.js"
         ],
 
         "dist/js/libs.min.js": [

@@ -23,10 +23,6 @@ APP.Scroll = {
       target = $( $(this).attr('href') );
 
       that.smoothScroll(target, 85);
-
-      // adds and removes active class
-      // $('.nav-item').removeClass('js-nav-active');
-      // $(this).parent().addClass('js-nav-active');
     });
   },
 
@@ -93,5 +89,21 @@ APP.Scroll = {
         currentElement.removeClass('js-nav-active');
       }
     });
-  }
+  },
+
+  // called when APP.Instagram and App.Twitter are created.
+  progressBar: function() {
+    var winHeight = $(window).height(),
+        docHeight = $('main').height(),
+        progressBar = $('progress'),
+        max, value;
+
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+
+    $(document).on('scroll', function(){
+      value = $(window).scrollTop();
+      progressBar.attr('value', value);
+    });
+  },
 }
