@@ -46,6 +46,23 @@ $link-primary:               $blue-primary;
 // Gradient
 //
 
+// Progress Bar
+@mixin progressBar($background) {
+  &::-webkit-progress-bar  {
+    background-color: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $background;
+    @include transition(all, .2s, 0s, linear);
+  }
+
+  &::-moz-progress-bar {
+    background-color: $background;
+    @include transition(all, .2s, 0s, linear);
+  }
+}
+
 // Background Images
 @mixin path ($rulers...) {
   background-image: url("../../src/images/"+$rulers);
