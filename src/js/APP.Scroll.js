@@ -9,6 +9,7 @@ APP.Scroll = {
     this.getPosition();
     this.showBackTop();
     this.backTop();
+    this.sectionActive();
   },
 
   getClick: function() {
@@ -24,8 +25,8 @@ APP.Scroll = {
       that.smoothScroll(target, 85);
 
       // adds and removes active class
-      $('.nav-item').removeClass('js-nav-active');
-      $(this).parent().addClass('js-nav-active');
+      // $('.nav-item').removeClass('js-nav-active');
+      // $(this).parent().addClass('js-nav-active');
     });
   },
 
@@ -65,6 +66,32 @@ APP.Scroll = {
       target = $( $(this).attr('href') );
 
       that.smoothScroll(target, 0);
+    });
+  },
+
+  sectionActive: function() {
+    var that = this;
+
+    $(document).on('scroll', that.markerSection);
+  },
+
+  markerSection: function() {
+    var that, scrollPos;
+
+    that = this;
+    scrollPos = $(document).scrollTop()+115;
+
+    $('.nav-item').each(function() {
+      var currentElement = $(this),
+          currentLink = $(this).children(), // get a
+          refElement  = $(currentLink.attr('href'));
+
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.nav-link').removeClass('js-nav-active');
+        currentElement.addClass('js-nav-active');
+      } else {
+        currentElement.removeClass('js-nav-active');
+      }
     });
   }
 }
