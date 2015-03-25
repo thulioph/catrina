@@ -1,5 +1,5 @@
 // ==========================================
-// Verifica se o usuário possui conexão
+// Trackea os clicks do usuário.
 // ==========================================
 
 var APP  = APP || {};
@@ -9,21 +9,13 @@ APP.Tracking = {
   },
 
   initTracking: function() {
-    $("[data-track='nav-home']").on('click', function(event) {
-      // 'send', 'event', 'element position', 'label', 'element that click'
-      ga('send', 'event', 'header', 'Nav', 'Home');
-    });
+    var category, action;
 
-    $("[data-track='nav-about']").on('click', function(event) {
-      ga('send', 'event', 'header', 'Nav', 'About');
-    });
+    $('[data-track]').on('click', function() {
+        category = $(this).attr('data-track'),
+        action = $(this).attr('data-action');
 
-    $("[data-track='nav-social']").on('click', function(event) {
-      ga('send', 'event', 'header', 'Nav', 'Social');
-    });
-
-    $("[data-track='nav-contact']").on('click', function(event) {
-      ga('send', 'event', 'header', 'Nav', 'Contact');
+      ga('send', 'event', category, action);
     });
   }
 };
