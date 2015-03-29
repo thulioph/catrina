@@ -53,6 +53,7 @@
         "dist/js/scripts.min.js": [
           "src/js/APP.js"
           ,"src/js/APP.Status.js"
+          ,"src/js/APP.Cache.js"
           ,"src/js/APP.Language.js"
           ,"src/js/APP.Tracking.js"
           ,"src/js/APP.Twitter.js"
