@@ -27,7 +27,7 @@ APP.Instagram = {
       cache: false,
       url: url,
       beforeSend: function() {
-        console.log('Carregando...');
+        // console.log('Carregando...');
       },
 
       success: function(data) {
