@@ -61,6 +61,10 @@ Para os estilos, os arquivos são organizados por:
 
 - `main` : chamada dos arquivos.
 
+#### Offline
+
+O projeto utiliza o **APP Cache**, lembre-se de alterar o arquivo [cache.manifest](https://github.com/thulioph/catrina/blob/master/cache.manifest) sempre que for publicar o seu projeto, caso contrário o cache não irá funcionar.
+
 ## Links de apoio?
 
 Todas as dependências, técnicas e estilos usados no projeto, você encontra na internet de forma fácil, os links abaixo são das documentações que podem te auxiliar caso queira fazer algo a mais ou contribuir com esse projeto.
