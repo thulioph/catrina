@@ -10,27 +10,27 @@ Não se importe com a [página de apresentação](http://thulioph.github.io/catr
 
 ## Como usar?
 
-É necessário que você tenha instalado na sua máquina [Sass](http://sass-lang.com), [Bower](http://bower.io/) e [Grunt](http://gruntjs.com/); Depois da instalação feita, clone o projeto e rode os comandos abaixo no terminal para prosseguir com as instalações das dependências.
+É necessário que você tenha instalado globalmente na sua máquina [Sass](http://sass-lang.com), [Bower](http://bower.io/), [Grunt](http://gruntjs.com/) e [npm](https://www.npmjs.com/); Depois da instalação feita, clone o projeto e rode o comando abaixo no terminal para prosseguir com as instalações das dependências e ferramentas necessárias.
 
 ```
-npm install
+npm start
 ```
 
-```
-bower install
-```
+O servidor irá rodar em: `http://localhost:8080`.
+
+Após instalar todas as dependências e ferramentas abra uma nova instância do terminal e rode:
 
 ```
-http-server
+grunt
 ```
 
-O servidor irá rodar em: `http://localhost:8080` e basicamente você vai trabalhar com dois "ambientes" *src* e *dist*.
+Basicamente você vai trabalhar com dois "ambientes" *src* e *dist*:
 
 #### src
 Nesta pasta contém os arquivos originais, imagens originais, arquivos comentados, libs, etc..
 
 #### dist
-Nesta pasta contém os arquivos minificados, otimizados e concatenados; E todo o processo é feito utilizando o Grunt.
+Nesta pasta contém os arquivos minificados, otimizados e concatenados, e todo o processo é feito utilizando o Grunt.
 
 #### JS
 
@@ -85,6 +85,19 @@ Todas as dependências, técnicas e estilos usados no projeto, você encontra na
 - [APPCache](http://www.html5rocks.com/pt/tutorials/appcache/beginner/)
 - [Eventos online e offline](https://developer.mozilla.org/pt-BR/docs/Online_and_offline_events)
 - [Cheet.js](http://namuol.github.io/cheet.js/)
+
+
+## Atualizações
+
+Para manter as dependências e ferramentas do seu projeto atualizadas, você pode rodar os comandos:
+
+```
+npm update
+```
+
+```
+bower update
+```
 
 
 > O projeto se encontra em evolução, então antes de reportar algum problema por favor verifique as [issues](https://github.com/thulioph/catrina/issues) e veja se alguém já está fazendo o que você pensou, se está tendo ou teve o mesmo problema que o seu, ou se está colaborando em alguma coisa que você queria. :cop:
