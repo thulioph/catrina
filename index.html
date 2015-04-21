@@ -73,7 +73,7 @@
   </script>
 </head>
 
-<body>
+<body id="home-page" class="m-scene">
   <progress value="0"></progress>
 
   <a id="fork-github" class="fork-github" href="https://github.com/thulioph/catrina" target="_blank">
@@ -105,7 +105,7 @@
   </header>
 
   <main id="main" class="main">
-    <section id="home" class="section home">
+    <section id="home" class="section home scene_element scene_element--fadeinright">
       <h2 class="section-title">Aqui vem um título para sua sessão</h2>
       <p class="section-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae amet error eligendi ab, consequatur delectus molestias minus aliquid vel sequi facilis, itaque a veritatis molestiae doloremque hic incidunt pariatur sit, voluptatem unde non totam! Ducimus autem mollitia nulla voluptatibus.
@@ -136,7 +136,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio nihil assumenda facere quasi minus molestiae ducimus perferendis ratione numquam.
       </p>
 
-      <a href="request.html" class="link request" title="Clique para fazer a requisição de um arquivo externo">
+      <a href="request.html" class="link request" title="Clique para fazer a requisição de um arquivo externo.">
         Link para request de arquivos externos.
       </a>
 
@@ -175,6 +175,10 @@
           </p>
         </div>
       </article>
+
+      <a href="/author" class="link external" title="Clique para ver transições entre as páginas.">
+        Link para outra página.
+      </a>
     </section>
 
     <section id="social" class="section social">
@@ -255,24 +259,7 @@
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
-  <!-- // <script src="dist/js/scripts.min.js"></script> -->
-  <script src="src/js/APP.js"></script>
-  <script src="src/js/APP.Status.js"></script>
-  <script src="src/js/APP.Cache.js"></script>
-  <script src="src/js/APP.Language.js"></script>
-  <script src="src/js/APP.Tracking.js"></script>
-  <script src="src/js/APP.Twitter.js"></script>
-  <script src="src/js/APP.Instagram.js"></script>
-  <script src="src/js/APP.Scroll.js"></script>
-  <script src="src/js/APP.Slide.js"></script>
-  <script src="src/js/APP.Request.js"></script>
-  <script src="src/js/APP.Storage.js"></script>
-  <script src="src/js/APP.Contact.js"></script>
-  <script src="src/js/APP.Modal.js"></script>
-  <script src="src/js/APP.EasterEggs.js"></script>
-  <script src="src/js/APP.Transitions.js"></script>
-
-  <script src="bower_components/smoothstate/jquery.smoothState.js"></script>
+  <script src="dist/js/scripts.min.js"></script>
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

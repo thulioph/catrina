@@ -215,9 +215,9 @@ progress {
 %width-fixed { width: 80%; }
 
 .section {
-  margin: 70px auto 0 auto;
+  margin: 20px auto 0 auto;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 70px 0 20px 0;
 
   &.home { @extend %width-fixed; }
   &.about {@extend %width-fixed; }
@@ -241,9 +241,12 @@ progress {
 
 .link {
   text-decoration: none;
+  display: block;
   font-size: ($fs-extra-small)-.2;
   color: $link-primary;
   font-family: $ff-general;
+
+  &.external { margin-top: 20px; }
 }
 
 // post

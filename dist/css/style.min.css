@@ -466,9 +466,9 @@ progress::-moz-progress-bar {
 
 /* line 217, ../../src/sass/_general.scss */
 .section {
-  margin: 70px auto 0 auto;
+  margin: 20px auto 0 auto;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 70px 0 20px 0;
 }
 
 /* line 226, ../../src/sass/_general.scss */
@@ -492,31 +492,36 @@ progress::-moz-progress-bar {
 /* line 242, ../../src/sass/_general.scss */
 .link {
   text-decoration: none;
+  display: block;
   font-size: 1rem;
   color: #2586b7;
   font-family: "OpenSansRegular";
 }
+/* line 249, ../../src/sass/_general.scss */
+.link.external {
+  margin-top: 20px;
+}
 
-/* line 250, ../../src/sass/_general.scss */
+/* line 253, ../../src/sass/_general.scss */
 .post {
   background-color: #E0E0E0;
   margin-top: 30px;
   padding: 20px 0;
 }
-/* line 255, ../../src/sass/_general.scss */
+/* line 258, ../../src/sass/_general.scss */
 .post.new {
   background-color: #2586b7;
 }
-/* line 258, ../../src/sass/_general.scss */
+/* line 261, ../../src/sass/_general.scss */
 .post.new h3 {
   color: #FFFFFF;
 }
-/* line 259, ../../src/sass/_general.scss */
+/* line 262, ../../src/sass/_general.scss */
 .post.new p {
   color: #FFFFFF;
 }
 
-/* line 263, ../../src/sass/_general.scss */
+/* line 266, ../../src/sass/_general.scss */
 .post-content {
   display: inline-block;
   vertical-align: middle;
@@ -524,14 +529,14 @@ progress::-moz-progress-bar {
   margin: 10px;
   text-align: left;
 }
-/* line 270, ../../src/sass/_general.scss */
+/* line 273, ../../src/sass/_general.scss */
 .post-content h3 {
   font-family: "OpenSansRegular";
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #5f6a7d;
 }
-/* line 277, ../../src/sass/_general.scss */
+/* line 280, ../../src/sass/_general.scss */
 .post-content p {
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -539,7 +544,7 @@ progress::-moz-progress-bar {
   line-height: 1.4rem;
 }
 
-/* line 285, ../../src/sass/_general.scss */
+/* line 288, ../../src/sass/_general.scss */
 .post-image {
   display: inline-block;
   vertical-align: middle;
@@ -547,7 +552,7 @@ progress::-moz-progress-bar {
   overflow: hidden;
   height: 202px;
 }
-/* line 292, ../../src/sass/_general.scss */
+/* line 295, ../../src/sass/_general.scss */
 .post-image img {
   -webkit-transition: transform 0.2s 0s ease-out;
   -moz-transition: transform 0.2s 0s ease-out;
@@ -555,7 +560,7 @@ progress::-moz-progress-bar {
   -o-transition: transform 0.2s 0s ease-out;
   transition: transform 0.2s 0s ease-out;
 }
-/* line 294, ../../src/sass/_general.scss */
+/* line 297, ../../src/sass/_general.scss */
 .post-image figcaption {
   width: 100%;
   padding: 20px 0;
@@ -573,11 +578,11 @@ progress::-moz-progress-bar {
   -o-transition: bottom 0.2s 0s ease-out;
   transition: bottom 0.2s 0s ease-out;
 }
-/* line 309, ../../src/sass/_general.scss */
+/* line 312, ../../src/sass/_general.scss */
 .post-image:hover figcaption {
   bottom: 0;
 }
-/* line 311, ../../src/sass/_general.scss */
+/* line 314, ../../src/sass/_general.scss */
 .post-image:hover img {
   -webkit-transform: translate3d(0, -40px, 0);
   -moz-transform: translate3d(0, -40px, 0);
@@ -589,25 +594,25 @@ progress::-moz-progress-bar {
   filter: url(#svg-blur);
 }
 
-/* line 320, ../../src/sass/_general.scss */
+/* line 323, ../../src/sass/_general.scss */
 #svg-filter {
   display: none;
 }
 
-/* line 324, ../../src/sass/_general.scss */
+/* line 327, ../../src/sass/_general.scss */
 .content-modal {
   display: none;
 }
-/* line 327, ../../src/sass/_general.scss */
+/* line 330, ../../src/sass/_general.scss */
 .content-modal p {
   width: 100%;
 }
 
-/* line 336, ../../src/sass/_general.scss */
+/* line 339, ../../src/sass/_general.scss */
 .social {
   text-align: center;
 }
-/* line 339, ../../src/sass/_general.scss */
+/* line 342, ../../src/sass/_general.scss */
 .social h2 {
   text-transform: uppercase;
   padding-bottom: 6px;
@@ -615,42 +620,42 @@ progress::-moz-progress-bar {
   display: inline-block;
 }
 
-/* line 347, ../../src/sass/_general.scss */
+/* line 350, ../../src/sass/_general.scss */
 .feeds {
   width: 100%;
   min-height: 280px;
   display: block;
   margin: 30px auto;
 }
-/* line 353, ../../src/sass/_general.scss */
+/* line 356, ../../src/sass/_general.scss */
 .feeds.instagram {
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
   padding: 30px 0;
 }
-/* line 360, ../../src/sass/_general.scss */
+/* line 363, ../../src/sass/_general.scss */
 .feeds li {
   display: inline-block;
   position: relative;
 }
 
-/* line 367, ../../src/sass/_general.scss */
+/* line 370, ../../src/sass/_general.scss */
 .feeds-instagram-item {
   margin: 2px;
   border: 1px solid #1B2126;
 }
 
-/* line 372, ../../src/sass/_general.scss */
+/* line 375, ../../src/sass/_general.scss */
 .feeds-instagram-link {
   text-decoration: none;
 }
-/* line 376, ../../src/sass/_general.scss */
+/* line 379, ../../src/sass/_general.scss */
 .feeds-instagram-link:hover .feeds-instagram-like {
   height: 25%;
 }
 
-/* line 380, ../../src/sass/_general.scss */
+/* line 383, ../../src/sass/_general.scss */
 .feeds-instagram-image {
   overflow: hidden;
   width: 150px;
@@ -658,7 +663,7 @@ progress::-moz-progress-bar {
   position: relative;
 }
 
-/* line 387, ../../src/sass/_general.scss */
+/* line 390, ../../src/sass/_general.scss */
 .feeds-instagram-like {
   position: absolute;
   text-align: center;
@@ -677,7 +682,7 @@ progress::-moz-progress-bar {
   -o-transition: height 0.2s 0s linear;
   transition: height 0.2s 0s linear;
 }
-/* line 401, ../../src/sass/_general.scss */
+/* line 404, ../../src/sass/_general.scss */
 .feeds-instagram-like::before {
   content: '';
   width: 30px;
@@ -695,7 +700,7 @@ progress::-moz-progress-bar {
   border-radius: 100%;
 }
 
-/* line 417, ../../src/sass/_general.scss */
+/* line 420, ../../src/sass/_general.scss */
 .feeds-twitter-item {
   width: 240px;
   height: auto;
@@ -709,7 +714,7 @@ progress::-moz-progress-bar {
   -o-transition: background 0.2s 0s ease-out;
   transition: background 0.2s 0s ease-out;
 }
-/* line 426, ../../src/sass/_general.scss */
+/* line 429, ../../src/sass/_general.scss */
 .feeds-twitter-item::before {
   content: '';
   position: absolute;
@@ -726,29 +731,29 @@ progress::-moz-progress-bar {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 439, ../../src/sass/_general.scss */
+/* line 442, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover {
   background-color: #5f6a7d;
 }
-/* line 442, ../../src/sass/_general.scss */
+/* line 445, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover::before {
   border-right: 26px solid #5f6a7d;
 }
-/* line 444, ../../src/sass/_general.scss */
+/* line 447, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover .tweet a {
   color: #FAFAFA;
 }
-/* line 446, ../../src/sass/_general.scss */
+/* line 449, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover p {
   color: #FAFAFA;
 }
-/* line 449, ../../src/sass/_general.scss */
+/* line 452, ../../src/sass/_general.scss */
 .feeds-twitter-item .user {
   position: absolute;
   bottom: -70px;
   left: 53px;
 }
-/* line 454, ../../src/sass/_general.scss */
+/* line 457, ../../src/sass/_general.scss */
 .feeds-twitter-item .user img {
   width: 48px;
   height: 48px;
@@ -759,16 +764,16 @@ progress::-moz-progress-bar {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 461, ../../src/sass/_general.scss */
+/* line 464, ../../src/sass/_general.scss */
 .feeds-twitter-item .user a {
   text-decoration: none;
   color: #2586b7;
 }
-/* line 466, ../../src/sass/_general.scss */
+/* line 469, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span {
   display: none;
 }
-/* line 469, ../../src/sass/_general.scss */
+/* line 472, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span[data-scribe="element:screen_name"] {
   font-size: 0.8rem;
   font-family: "OpenSansRegular";
@@ -777,7 +782,7 @@ progress::-moz-progress-bar {
   margin-left: 10px;
   display: inline-block;
 }
-/* line 480, ../../src/sass/_general.scss */
+/* line 483, ../../src/sass/_general.scss */
 .feeds-twitter-item p {
   font-size: 0.8rem;
   line-height: 1.4rem;
@@ -787,28 +792,28 @@ progress::-moz-progress-bar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 487, ../../src/sass/_general.scss */
+/* line 490, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet {
   padding: 20px;
 }
-/* line 490, ../../src/sass/_general.scss */
+/* line 493, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet a {
   color: #2586b7;
 }
 
-/* line 501, ../../src/sass/_general.scss */
+/* line 504, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 507, ../../src/sass/_general.scss */
+/* line 510, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 513, ../../src/sass/_general.scss */
+/* line 516, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }
@@ -1172,4 +1177,159 @@ progress::-moz-progress-bar {
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/
   }
+}
+/* line 1, ../../src/sass/_animations.scss */
+body.author {
+  margin: 0;
+  padding: 0;
+  background-color: #e91e63;
+}
+
+/*.m-header {
+  padding: 8.5em 8.5em 4.25em;
+  position: relative;
+}*/
+/*.m-page {
+  background-color: #eceff1;
+  color: #263238;
+  padding:30px 30px 900px;
+}*/
+/*.m-detail-layout {
+  padding-left: 270px;
+}*/
+/*.m-detail-layout .m-aside {
+  position: absolute;
+  left: 0;
+  width: 270px;
+  background-color: #e91e63;
+}*/
+/*
+ * Keyframes
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+/** Basic styles for an animated element */
+/* line 112, ../../src/sass/_animations.scss */
+.m-scene .scene_element {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+}
+
+/** An element that fades in */
+/* line 123, ../../src/sass/_animations.scss */
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/** An element that fades in and slides up */
+/* line 129, ../../src/sass/_animations.scss */
+.m-scene .scene_element--fadeinup {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/** An element that fades in and slides from the right */
+/* line 135, ../../src/sass/_animations.scss */
+.m-scene .scene_element--fadeinright {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/* line 140, ../../src/sass/_animations.scss */
+.m-scene .scene_element--delayed {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* line 145, ../../src/sass/_animations.scss */
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+}
+
+/* line 150, ../../src/sass/_animations.scss */
+.m-scene.is-exiting .scene_element--delayed {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/* line 155, ../../src/sass/_animations.scss */
+.m-scene.is-exiting .scene_element--noexiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
 }
