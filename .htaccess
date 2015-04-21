@@ -213,7 +213,8 @@ AddDefaultCharset utf-8
 
 # URL'S AMIGÁVEIS
 
-    RewriteRule ^home/?$ index.php [NC,L]
+    RewriteRule ^home/?$ index.html [NC,L]
+    RewriteRule ^author/?$ author.html [NC,L]
 
 </IfModule>
 

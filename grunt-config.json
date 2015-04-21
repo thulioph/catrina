@@ -65,6 +65,7 @@
           ,"src/js/APP.Contact.js"
           ,"src/js/APP.Modal.js"
           ,"src/js/APP.EasterEggs.js"
+          ,"src/js/APP.Transitions.js"
         ],
 
         "dist/js/libs.min.js": [
@@ -77,6 +78,7 @@
           ,"bower_components/fancybox/source/jquery.fancybox.pack.js"
           ,"src/js/libs/twitterFetcher.js"
           ,"bower_components/cheet.js/cheet.js"
+          ,"bower_components/smoothstate/jquery.smoothState.js"
         ]
       }
     }
