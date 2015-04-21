@@ -322,8 +322,13 @@ progress::-moz-progress-bar {
   top: 90px;
   position: relative;
 }
+/* line 105, ../../src/sass/_general.scss */
+.footer-primary p.copyright {
+  width: 100%;
+  height: 30px;
+}
 
-/* line 107, ../../src/sass/_general.scss */
+/* line 112, ../../src/sass/_general.scss */
 .social-item {
   width: 280px;
   border: 1px solid #FAFAFA;
@@ -332,7 +337,7 @@ progress::-moz-progress-bar {
   margin: 70px 10px 0 0;
 }
 
-/* line 115, ../../src/sass/_general.scss */
+/* line 120, ../../src/sass/_general.scss */
 .social-link {
   line-height: 45px;
   display: block;
@@ -347,13 +352,13 @@ progress::-moz-progress-bar {
   -o-transition: all 0.2s 0s ease-out;
   transition: all 0.2s 0s ease-out;
 }
-/* line 125, ../../src/sass/_general.scss */
+/* line 130, ../../src/sass/_general.scss */
 .social-link:hover {
   background-color: #E0E0E0;
   color: #1B2126;
 }
 
-/* line 131, ../../src/sass/_general.scss */
+/* line 136, ../../src/sass/_general.scss */
 .back-top {
   width: 50px;
   height: 50px;
@@ -386,16 +391,16 @@ progress::-moz-progress-bar {
   -o-transition: opacity 0.2s 0s linear;
   transition: opacity 0.2s 0s linear;
 }
-/* line 153, ../../src/sass/_general.scss */
+/* line 158, ../../src/sass/_general.scss */
 .back-top.js-show {
   opacity: 1;
 }
-/* line 155, ../../src/sass/_general.scss */
+/* line 160, ../../src/sass/_general.scss */
 .back-top:hover {
   opacity: .5;
 }
 
-/* line 160, ../../src/sass/_general.scss */
+/* line 165, ../../src/sass/_general.scss */
 .nav-primary {
   height: 60px;
   width: 100%;
@@ -404,27 +409,27 @@ progress::-moz-progress-bar {
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 168, ../../src/sass/_general.scss */
+/* line 173, ../../src/sass/_general.scss */
 .nav-primary.js-nav-active {
   position: fixed;
   top: -76px;
   z-index: 901;
 }
 
-/* line 175, ../../src/sass/_general.scss */
+/* line 180, ../../src/sass/_general.scss */
 .nav-item {
   display: inline-block;
 }
-/* line 178, ../../src/sass/_general.scss */
+/* line 183, ../../src/sass/_general.scss */
 .nav-item.js-nav-active {
   background-color: #2586b7;
 }
-/* line 181, ../../src/sass/_general.scss */
+/* line 186, ../../src/sass/_general.scss */
 .nav-item.js-nav-active .nav-link {
   color: #FFFFFF;
 }
 
-/* line 185, ../../src/sass/_general.scss */
+/* line 190, ../../src/sass/_general.scss */
 .nav-link {
   display: block;
   text-decoration: none;
@@ -440,12 +445,12 @@ progress::-moz-progress-bar {
   -o-transition: color 0.2s 0s linear;
   transition: color 0.2s 0s linear;
 }
-/* line 196, ../../src/sass/_general.scss */
+/* line 201, ../../src/sass/_general.scss */
 .nav-link:hover {
   color: #2586b7;
 }
 
-/* line 201, ../../src/sass/_general.scss */
+/* line 206, ../../src/sass/_general.scss */
 .fork-github img {
   z-index: 10;
   position: absolute;
@@ -454,19 +459,19 @@ progress::-moz-progress-bar {
   border: 0;
 }
 
-/* line 210, ../../src/sass/_general.scss */
+/* line 215, ../../src/sass/_general.scss */
 .section.home, .section.about, .contact .content {
   width: 80%;
 }
 
-/* line 212, ../../src/sass/_general.scss */
+/* line 217, ../../src/sass/_general.scss */
 .section {
   margin: 70px auto 0 auto;
   text-align: center;
   padding-bottom: 20px;
 }
 
-/* line 221, ../../src/sass/_general.scss */
+/* line 226, ../../src/sass/_general.scss */
 .section-title {
   font-family: "OpenSansBold";
   font-size: 1.4rem;
@@ -474,7 +479,7 @@ progress::-moz-progress-bar {
   text-transform: none;
 }
 
-/* line 228, ../../src/sass/_general.scss */
+/* line 233, ../../src/sass/_general.scss */
 .section-description {
   line-height: 1.4rem;
   font-size: 1rem;
@@ -484,7 +489,7 @@ progress::-moz-progress-bar {
   margin: 20px auto;
 }
 
-/* line 237, ../../src/sass/_general.scss */
+/* line 242, ../../src/sass/_general.scss */
 .link {
   text-decoration: none;
   font-size: 1rem;
@@ -492,26 +497,26 @@ progress::-moz-progress-bar {
   font-family: "OpenSansRegular";
 }
 
-/* line 245, ../../src/sass/_general.scss */
+/* line 250, ../../src/sass/_general.scss */
 .post {
   background-color: #E0E0E0;
   margin-top: 30px;
   padding: 20px 0;
 }
-/* line 250, ../../src/sass/_general.scss */
+/* line 255, ../../src/sass/_general.scss */
 .post.new {
   background-color: #2586b7;
 }
-/* line 253, ../../src/sass/_general.scss */
+/* line 258, ../../src/sass/_general.scss */
 .post.new h3 {
   color: #FFFFFF;
 }
-/* line 254, ../../src/sass/_general.scss */
+/* line 259, ../../src/sass/_general.scss */
 .post.new p {
   color: #FFFFFF;
 }
 
-/* line 258, ../../src/sass/_general.scss */
+/* line 263, ../../src/sass/_general.scss */
 .post-content {
   display: inline-block;
   vertical-align: middle;
@@ -519,14 +524,14 @@ progress::-moz-progress-bar {
   margin: 10px;
   text-align: left;
 }
-/* line 265, ../../src/sass/_general.scss */
+/* line 270, ../../src/sass/_general.scss */
 .post-content h3 {
   font-family: "OpenSansRegular";
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #5f6a7d;
 }
-/* line 272, ../../src/sass/_general.scss */
+/* line 277, ../../src/sass/_general.scss */
 .post-content p {
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -534,7 +539,7 @@ progress::-moz-progress-bar {
   line-height: 1.4rem;
 }
 
-/* line 280, ../../src/sass/_general.scss */
+/* line 285, ../../src/sass/_general.scss */
 .post-image {
   display: inline-block;
   vertical-align: middle;
@@ -542,7 +547,7 @@ progress::-moz-progress-bar {
   overflow: hidden;
   height: 202px;
 }
-/* line 287, ../../src/sass/_general.scss */
+/* line 292, ../../src/sass/_general.scss */
 .post-image img {
   -webkit-transition: transform 0.2s 0s ease-out;
   -moz-transition: transform 0.2s 0s ease-out;
@@ -550,7 +555,7 @@ progress::-moz-progress-bar {
   -o-transition: transform 0.2s 0s ease-out;
   transition: transform 0.2s 0s ease-out;
 }
-/* line 289, ../../src/sass/_general.scss */
+/* line 294, ../../src/sass/_general.scss */
 .post-image figcaption {
   width: 100%;
   padding: 20px 0;
@@ -568,11 +573,11 @@ progress::-moz-progress-bar {
   -o-transition: bottom 0.2s 0s ease-out;
   transition: bottom 0.2s 0s ease-out;
 }
-/* line 304, ../../src/sass/_general.scss */
+/* line 309, ../../src/sass/_general.scss */
 .post-image:hover figcaption {
   bottom: 0;
 }
-/* line 306, ../../src/sass/_general.scss */
+/* line 311, ../../src/sass/_general.scss */
 .post-image:hover img {
   -webkit-transform: translate3d(0, -40px, 0);
   -moz-transform: translate3d(0, -40px, 0);
@@ -584,25 +589,25 @@ progress::-moz-progress-bar {
   filter: url(#svg-blur);
 }
 
-/* line 315, ../../src/sass/_general.scss */
+/* line 320, ../../src/sass/_general.scss */
 #svg-filter {
   display: none;
 }
 
-/* line 319, ../../src/sass/_general.scss */
+/* line 324, ../../src/sass/_general.scss */
 .content-modal {
   display: none;
 }
-/* line 322, ../../src/sass/_general.scss */
+/* line 327, ../../src/sass/_general.scss */
 .content-modal p {
   width: 100%;
 }
 
-/* line 331, ../../src/sass/_general.scss */
+/* line 336, ../../src/sass/_general.scss */
 .social {
   text-align: center;
 }
-/* line 334, ../../src/sass/_general.scss */
+/* line 339, ../../src/sass/_general.scss */
 .social h2 {
   text-transform: uppercase;
   padding-bottom: 6px;
@@ -610,42 +615,42 @@ progress::-moz-progress-bar {
   display: inline-block;
 }
 
-/* line 342, ../../src/sass/_general.scss */
+/* line 347, ../../src/sass/_general.scss */
 .feeds {
   width: 100%;
   min-height: 280px;
   display: block;
   margin: 30px auto;
 }
-/* line 348, ../../src/sass/_general.scss */
+/* line 353, ../../src/sass/_general.scss */
 .feeds.instagram {
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
   padding: 30px 0;
 }
-/* line 355, ../../src/sass/_general.scss */
+/* line 360, ../../src/sass/_general.scss */
 .feeds li {
   display: inline-block;
   position: relative;
 }
 
-/* line 362, ../../src/sass/_general.scss */
+/* line 367, ../../src/sass/_general.scss */
 .feeds-instagram-item {
   margin: 2px;
   border: 1px solid #1B2126;
 }
 
-/* line 367, ../../src/sass/_general.scss */
+/* line 372, ../../src/sass/_general.scss */
 .feeds-instagram-link {
   text-decoration: none;
 }
-/* line 371, ../../src/sass/_general.scss */
+/* line 376, ../../src/sass/_general.scss */
 .feeds-instagram-link:hover .feeds-instagram-like {
   height: 25%;
 }
 
-/* line 375, ../../src/sass/_general.scss */
+/* line 380, ../../src/sass/_general.scss */
 .feeds-instagram-image {
   overflow: hidden;
   width: 150px;
@@ -653,7 +658,7 @@ progress::-moz-progress-bar {
   position: relative;
 }
 
-/* line 382, ../../src/sass/_general.scss */
+/* line 387, ../../src/sass/_general.scss */
 .feeds-instagram-like {
   position: absolute;
   text-align: center;
@@ -672,7 +677,7 @@ progress::-moz-progress-bar {
   -o-transition: height 0.2s 0s linear;
   transition: height 0.2s 0s linear;
 }
-/* line 396, ../../src/sass/_general.scss */
+/* line 401, ../../src/sass/_general.scss */
 .feeds-instagram-like::before {
   content: '';
   width: 30px;
@@ -690,7 +695,7 @@ progress::-moz-progress-bar {
   border-radius: 100%;
 }
 
-/* line 412, ../../src/sass/_general.scss */
+/* line 417, ../../src/sass/_general.scss */
 .feeds-twitter-item {
   width: 240px;
   height: auto;
@@ -704,7 +709,7 @@ progress::-moz-progress-bar {
   -o-transition: background 0.2s 0s ease-out;
   transition: background 0.2s 0s ease-out;
 }
-/* line 421, ../../src/sass/_general.scss */
+/* line 426, ../../src/sass/_general.scss */
 .feeds-twitter-item::before {
   content: '';
   position: absolute;
@@ -721,29 +726,29 @@ progress::-moz-progress-bar {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 434, ../../src/sass/_general.scss */
+/* line 439, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover {
   background-color: #5f6a7d;
 }
-/* line 437, ../../src/sass/_general.scss */
+/* line 442, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover::before {
   border-right: 26px solid #5f6a7d;
 }
-/* line 439, ../../src/sass/_general.scss */
+/* line 444, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover .tweet a {
   color: #FAFAFA;
 }
-/* line 441, ../../src/sass/_general.scss */
+/* line 446, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover p {
   color: #FAFAFA;
 }
-/* line 444, ../../src/sass/_general.scss */
+/* line 449, ../../src/sass/_general.scss */
 .feeds-twitter-item .user {
   position: absolute;
   bottom: -70px;
   left: 53px;
 }
-/* line 449, ../../src/sass/_general.scss */
+/* line 454, ../../src/sass/_general.scss */
 .feeds-twitter-item .user img {
   width: 48px;
   height: 48px;
@@ -754,16 +759,16 @@ progress::-moz-progress-bar {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 456, ../../src/sass/_general.scss */
+/* line 461, ../../src/sass/_general.scss */
 .feeds-twitter-item .user a {
   text-decoration: none;
   color: #2586b7;
 }
-/* line 461, ../../src/sass/_general.scss */
+/* line 466, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span {
   display: none;
 }
-/* line 464, ../../src/sass/_general.scss */
+/* line 469, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span[data-scribe="element:screen_name"] {
   font-size: 0.8rem;
   font-family: "OpenSansRegular";
@@ -772,7 +777,7 @@ progress::-moz-progress-bar {
   margin-left: 10px;
   display: inline-block;
 }
-/* line 475, ../../src/sass/_general.scss */
+/* line 480, ../../src/sass/_general.scss */
 .feeds-twitter-item p {
   font-size: 0.8rem;
   line-height: 1.4rem;
@@ -782,28 +787,28 @@ progress::-moz-progress-bar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 482, ../../src/sass/_general.scss */
+/* line 487, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet {
   padding: 20px;
 }
-/* line 485, ../../src/sass/_general.scss */
+/* line 490, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet a {
   color: #2586b7;
 }
 
-/* line 496, ../../src/sass/_general.scss */
+/* line 501, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 502, ../../src/sass/_general.scss */
+/* line 507, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 508, ../../src/sass/_general.scss */
+/* line 513, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }

@@ -101,6 +101,11 @@ progress {
     display: inline-block;
     top: 90px;
     position: relative;
+
+    &.copyright {
+      width: 100%;
+      height: 30px;
+    }
   }
 }
 
