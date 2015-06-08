@@ -1,5 +1,7 @@
 ![Catrina](catrina.jpg "Catrina")
 
+[![Code Climate](https://codeclimate.com/github/thulioph/catrina/badges/gpa.svg)](https://codeclimate.com/github/thulioph/catrina)
+
 ## Olá, conheça o Catrina!
 
 O intúito deste projeto é ser um ponto de partida para você criar uma *landing page*, utilizando de recursos existentes de uma forma fácil e simples, você consegue fazer muito escrevendo pouco. Recentemente fiz alguns trabalhos que tinham necessidades parecidas, o cara queria mostrar as fotos do Instagram da empresa, ou fotos de determinadas hashtags, o outro queria o feeds do Twiiter, eles queriam que o usuário acessassem seu conteúdo mesmo sem internet e que enviasse um contato caso necessário, enfim.. Foram várias demandas e todas nada muito complicadas para fazer, porém estava levando um pouco mais de tempo do que queria pra fazer isso, então resolvi criar algo que me ajudasse nisso. :smile:
